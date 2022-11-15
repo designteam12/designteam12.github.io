@@ -1,0 +1,62 @@
+@charset "utf-8";
+
+@font-face{
+    font-family:NotoSans;
+    src:url(../fonts/NotoSansCJKkr-Regular.eot);
+    src:local('※'), url(../fonts/NotoSansCJKkr-Regular.woff) format('woff');
+}
+@font-face{
+    font-family:NotoSansM;
+    src:url(../fonts/NotoSansCJKkr-Medium.eot);
+    src:local('※'), url(../fonts/NotoSansCJKkr-Medium.woff) format('woff');
+}
+@font-face{
+    font-family:Pretendard;
+    src:url(../fonts/Pretendard-Regular.eot);
+    src:local('※'), url(../fonts/Pretendard-Regular.woff) format('woff');
+}
+@font-face{
+    font-family:PretendardM;
+    src:url(../fonts/Pretendard-Medium.eot);
+    src:local('※'), url(../fonts/Pretendard-Medium.woff) format('woff');
+}
+@font-face{
+    font-family:PretendardSB;
+    src:url(../fonts/Pretendard-SemiBold.eot);
+    src:local('※'), url(../fonts/Pretendard-SemiBold.woff) format('woff');
+}
+@font-face{
+    font-family:PretendardB;
+    src:url(../fonts/Pretendard-Bold.eot);
+    src:local('※'), url(../fonts/Pretendard-Bold.woff) format('woff');
+}
+@font-face{
+    font-family:PretendardEB;
+    src:url(../fonts/Pretendard-ExtraBold.eot);
+    src:local('※'), url(../fonts/Pretendard-ExtraBold.woff) format('woff');
+}
+@font-face{
+    font-family:NanumSquareNeoL;
+    src:url(../fonts/NanumSquareNeoTTF-aLt.eot);
+    src:local('※'), url(../fonts/NanumSquareNeoTTF-aLt.woff) format('woff');
+}
+@font-face{
+    font-family:NanumSquareNeo;
+    src:url(../fonts/NanumSquareNeoTTF-bRg.eot);
+    src:local('※'), url(../fonts/NanumSquareNeoTTF-bRg.woff) format('woff');
+}
+@font-face{
+    font-family:NanumSquareNeoB;
+    src:url(../fonts/NanumSquareNeoTTF-cBd.eot);
+    src:local('※'), url(../fonts/NanumSquareNeoTTF-cBd.woff) format('woff');
+}
+@font-face{
+    font-family:NanumSquareNeoEB;
+    src:url(../fonts/NanumSquareNeoTTF-dEb.eot);
+    src:local('※'), url(../fonts/NanumSquareNeoTTF-dEb.woff) format('woff');
+}
+@font-face{
+    font-family:NanumSquareNeoH;
+    src:url(../fonts/NanumSquareNeoTTF-eHv.eot);
+    src:local('※'), url(../fonts/NanumSquareNeoTTF-eHv.woff) format('woff');
+}

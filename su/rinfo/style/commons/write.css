@@ -1,0 +1,80 @@
+@charset "utf-8";
+
+/* 게시판 */
+.boardDetailW {border:1px solid #e7e7e9;border-radius: 13px;overflow: hidden;}
+.boardDetail {margin-bottom:20px;padding:30px 0 56px 0}
+.boardTop {border-bottom:1px solid #e2e2e2}
+.boardDetail .tit {padding:0 32px 0 36px;color: #222;font-family: PretendardB,sans-serif; font-size: 21px;letter-spacing: -0.025em;}
+.boardDetail .writeInfo {display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-pack: justify;-ms-flex-pack: justify;justify-content: space-between;margin:15px 0 17px 0;padding:0 32px 0 36px;}
+.boardDetail .writeInfo>li {color:#555}
+.boardDetail .boardContent {margin:24px 0 0 0;padding:0 32px 0 40px;}
+.boardDetail .boardContent .txt {color:#555;line-height: 36px;}
+.boardDetail .boardContent img {margin-top:20px}
+
+.boardArea .attachFile {padding:36px;background:#f8f8f8}
+.boardArea .attachFile::after {content:"";display:block;clear:both}
+.boardArea .attachFile p {float:left;color:#3c3c3c}
+.boardArea .attachFile .fileList {margin-left:100px}
+.boardArea .attachFile .fileList>li:not(:last-child) {margin-bottom:4px}
+.boardArea .attachFile .fileList a {display:inline-block;padding-left:20px;background:url(../../images/commons/fileClip.png) no-repeat left top 3px;color:#2d2c3a;}
+.boardArea .attachFile .fileList a:hover {color:#f65d00}
+.boardArea .attachFile .fileList a img {margin-right:6px;vertical-align: middle;}
+
+.backBtn{margin-top:12px;text-align: right;}
+
+.boardArea .boardList {margin-top:32px;background:#fff;border:1px solid #e7e7e9;border-radius:13px}
+.boardArea .boardList>ul>li {display:-webkit-box;display:-ms-flexbox;display:flex;align-items:center;-webkit-box-align:center;-ms-flex-align:center;padding:30px 36px 30px 36px}
+.boardArea .boardList>ul>li:not(:last-child) {border-bottom:1px solid #e9edf2}
+.boardArea .boardList .writing {display:inline-block;width:80px;color:#6b6b6b;}
+.boardArea .boardList .infoBox a {color:#222}
+.boardArea .boardList .infoBox a:hover {text-decoration: underline;}
+
+@media screen and (max-width:767px) {
+    .boardDetail {padding-top:20px}
+    .boardDetail .tit {padding:0 16px}
+    .boardDetail .boardContent {padding:0 16px}
+    .boardDetail .boardContent .txt {line-height: 28px;}
+    .boardArea .attachFile {padding:28px 16px}
+    .boardArea .attachFile p {float:none;margin-bottom:12px}
+    .boardArea .attachFile .fileList {margin-left:0}
+
+    .boardArea .boardList>ul>li {display:block;padding:20px 16px}
+    .boardArea .boardList .writing {margin-bottom:4px}
+
+    .boardDetail .writeInfo {padding: 0 16px}
+
+}
+
+/* 작성 */
+.summaryForm{margin-bottom:20px;padding:20px 28px 8px 28px;background:#f8f8f8;border-radius: 15px;}
+.summaryForm>ul{display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-pack: justify;-ms-flex-pack: justify;justify-content: space-between;-webkit-box-lines: multiple;-ms-flex-wrap: wrap;flex-wrap: wrap;}
+.summaryForm>ul>li{display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-align: center;-ms-flex-align: center;align-items: center;width:620px;margin-bottom:12px}
+.summaryForm>ul>li .tit{width:90px;color:#0c0c0c;font-size:15px;font-family: PretendardM,sans-serif;letter-spacing: -0.005em;}
+.summaryForm>ul>li>div{width:calc(100% - 90px)}
+.writeForm1>ul>li:not(:last-child) {margin-bottom:12px}
+.writeForm1>ul>li .tit {display:block;margin-bottom:8px;color:#000;font-family: PretendardM,sans-serif;font-size:15px}
+.writeForm1>ul>li .tit img {width:6px;height:auto;margin-left:2px;vertical-align: 3px;}
+.writeForm1>ul>li>div {color:#474747}
+.writeForm1>ul>li .explainTxt {margin-top:4px;color:#5a5a5a;font-size:1rem}
+
+.writeForm1 .withOneBtn {font-size:0}
+.writeForm1 .withOneBtn .inputType2 {width:calc(100% - 98px)}
+.writeForm1 .withOneBtn .btnType4 {width:90px;margin-left:8px;min-width:84px;box-sizing: border-box;text-align: center;}
+
+.agreeBox{margin:28px 0}
+.agreeTit {margin-bottom:12px;color: #060606;font-size:15px;line-height:18px;}
+.agreeBox .agreeTxt {height:194px;padding:15px 12px 17px;border-radius: 10px;border:1px solid #e3e3e3;overflow-y:auto;overflow-x:hidden}
+.agreeBox .agreeTxt > div {width:100%;}
+.agreeBox div.clause .margin {margin-bottom:16px}
+.agreeBox .agreeTxt > div li h3 {font-size:14px}
+.agreeBox .agreeTxt > div li {color: #5b5b5b;font-size: 14px;line-height:18px;}
+.agreeTable {margin:8px 0;width:100%;table-layout: fixed;}
+.agreeTable thead th {padding:4px;background:#e9e9e9;border:1px solid #999;text-align: center;vertical-align: middle;font-size:14px}
+.agreeTable tbody td {padding:4px;border:1px solid #999;text-align: center;vertical-align: middle;font-size:14px}
+.agreeChk{margin-top:12px}
+
+@media screen and (max-width:767px) {
+    .summaryForm{padding:20px 16px 16px 16px}
+    .summaryForm>ul>li{width:100%;margin-bottom:6px}
+    .summaryForm>ul>li:last-child{margin-bottom:0}
+}
