@@ -66,24 +66,42 @@ $(document).ready(function(){
     
     $(window).enllax();
 
-    $('#divTopMenu>ul>li>a').click(function(e){
+    $('#divTopMenu>ul>li>a').on('click focus',function(e){
         e.preventDefault();
-        if($(this).parent().hasClass('on')){
-            $(this).parent().removeClass('on');
-        }else{
-            $('#divTopMenu>ul>li').removeClass('on')
-            $(this).parent().addClass('on');
-        }
+        if($('#divTopMenu>ul>li.on').length < 1){
+			$(this).parent().addClass('on').siblings().removeClass('on');
+			$(this).stop().next().slideDown(300);
+            
+		}else{
+			$(this).parent().addClass('on').siblings().removeClass('on');
+			$('#divTopMenu>ul>li>div').hide();
+			$(this).stop().next().show();
+		}
     });
+    $('#divTopMenu>ul>li:last-child>div>ul>li:last-child>a').focusout(function(){
+        $('#divTopMenu>ul>li').removeClass('on')
+        $('#divTopMenu>ul>li>div').slideUp();
+    })
+
     
+    let bannerT = $('.banner').offset().top - 900;
     $(window).on('scroll',function(){
         scroll = $(window).scrollTop();
+        bannerT = $('.banner').offset().top - 900;
         if(scroll>0){
             $('#header').addClass('fix')
             $('#divContent').addClass('up')
         }else{
             $('#header').removeClass('fix')
             $('#divContent').removeClass('up')
+        }
+        if(scroll > bannerT){
+            //alert('asd')
+            $('.evalSys').addClass('hide');
+            $('.statSys').addClass('hide');
+        }else{
+            $('.evalSys').removeClass('hide');
+            $('.statSys').removeClass('hide');
         }
 
     });
@@ -92,16 +110,14 @@ $(document).ready(function(){
     $('.wholeMenuBtn').click(function(e){
         e.preventDefault();
         $('#header').css('z-index',40)
-        $('.blackBg1').show();
         $('.wholeMenu').addClass('on');
         $('html, body').css('overflow','hidden')
     });
     $('.wholeMenuClose').click(function(e){
         e.preventDefault();
         $('#header').css('z-index',30)
-        $('.blackBg1').hide();
         $('.wholeMenu').removeClass('on');
-        $('html, body').css('overflow','visible')
+        $('html, body').css('overflow','visible').css('overflow-x','hidden')
     });
     let wholeMenuNav = new Swiper('.wholeMenuNav .inner', {
         slidesPerView: 'auto',

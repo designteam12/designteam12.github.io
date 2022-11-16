@@ -7,8 +7,7 @@
 #divTopMenu>ul{font-size:0}
 #divTopMenu>ul>li{display:inline-block;width:25%;margin-top:4px;text-align: center;}
 #divTopMenu>ul>li>a{display:inline-block;color:#fff;font-size:21px;font-family: PretendardB,sans-serif;letter-spacing: -0.005em;}
-#divTopMenu>ul>li .depth2{display:none;position:absolute;top:96px;left:0;width:100%;height:80px;background:#fff;box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);transition:.3s}
-#divTopMenu>ul>li.on .depth2{display:block}
+#divTopMenu>ul>li .depth2{display:none;position:absolute;top:103px;left:0;width:100%;height:80px;background:#fff;box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);transition:top .3s}
 #divTopMenu>ul>li .depth2>ul{display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-pack: justify;-ms-flex-pack: justify;justify-content: center;-webkit-box-align: center;-ms-flex-align: center;align-items: center;width:1406px;height:80px;margin:0 auto;text-align: center;font-size:0}
 #divTopMenu>ul>li .depth2>ul>li{display:inline-block}
 #divTopMenu>ul>li .depth2>ul>li:not(:last-child){margin-right:60px}
@@ -251,8 +250,14 @@
   .dataSlide .swiper-slide-active.data.cSmall .cnt{font-size:21px} 
   .dataSlide .swiper-prev, .dataSlide .swiper-next{top:140px}
 
-  .quickMenu{width:auto;padding:0 8px}
+  .quickMenu{width:auto;padding:0}
+  .quickMenu .inner{margin:0;padding:0 20px}
   .quickSlide .quick:not(:last-child){margin-right:28px}
+  .quickSlide .quick span.icoArea{width: 65px;height: 65px;margin-bottom:8px}
+  .quickSlide .quick span.icoArea img{width:48px}
+  .quickSlide .quick.downType span.icoArea{border-radius: 20px;}
+  .quickSlide .quick.downType span.icoArea img{width: 36px;}
+
 }
 @media screen and (max-width:500px){
   .dataSlide .swiper-slide::after{top:-33px;width:286px;height:242px}
@@ -350,9 +355,10 @@
 .banner{display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-pack: justify;-ms-flex-pack: justify;justify-content: space-between;-webkit-box-align: center;-ms-flex-align: center;align-items: center;width:1260px;min-height:80px;margin:0 auto;padding:12px 0;box-sizing: border-box;}
 .banner .tit{margin-right:96px;padding-left:36px;background:url(../../images/main/bannerIcon.png) no-repeat left top -1px;color:#616161;font-size:17px;font-family: PretendardM,sans-serif;letter-spacing: -0.0005em;}
 .bannerSlideW{position:relative;width:calc(100% - 192px)}
-.bannerSlide{margin-right:180px;overflow: hidden;}
+.bannerSlide{display:flex;margin-right:180px;overflow: hidden;}
 .bannerSlide .slick-slide{position:relative;width:auto;margin-right:40px;padding-right:48px;}
-.bannerSlide .bannerItem{position:relative;box-sizing: border-box;}
+.bannerSlide .bannerItem{position:relative;float:left;box-sizing: border-box;}
+.bannerSlide.slick-initialized .bannerItem{float:none}
 .bannerSlide .slick-slide::before{content:"";display:block;position:absolute;top:9px;right:0;width:3px;height:3px;background:#d2d2d2;border-radius: 100%;}
 .bannerSlide .bannerItem>a{font-size:16px;font-family: PretendardM,sans-serif;letter-spacing: -0.005em;}
 .bannerBtns{position:absolute;top:50%;right:0;transform: translateY(-50%);display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-align: center;-ms-flex-align: center;align-items: center;}
@@ -419,17 +425,19 @@
 .mySearchBtn .icoArea img{width:40px;height:auto;margin:4px 0 0 4px;image-rendering:auto}
 .mySearchBtn .txt{color:#0d0d0d;font-family: PretendardEB,sans-serif;}
 
-.evalSys{position:fixed;bottom:126px;right:48px;display:block;z-index:10;text-align: center;}
+.evalSys{position:fixed;bottom:126px;right:48px;display:block;z-index:10;text-align: center;transition:.3s;}
 .evalSys .icoArea{display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-pack: justify;-ms-flex-pack: justify;justify-content: center;-webkit-box-align: center;-ms-flex-align: center;align-items: center;width:76px;height:76px;background: #474747;border-radius: 100%;box-shadow: 0px 8px 13px 0px rgba(0, 0, 0, 0.14)}
 .evalSys .icoArea img{width:34px;height:auto}
 .evalSys .tooltip{position:absolute;top:50%;right:86px;transform: translateY(-50%);width:0;height:32px;line-height: 32px;background:#fb6017;color:#fff;border-radius: 20px;text-align: center;box-shadow: 0px 7px 11px 0px rgba(0, 0, 0, 0.21);white-space:nowrap;overflow: hidden;transition:.3s}
 .evalSys:hover .tooltip{width:102px}
 
-.statSys{position:fixed;bottom:32px;right:48px;display:block;z-index:10;text-align: center;}
+.statSys{position:fixed;bottom:32px;right:48px;display:block;z-index:10;text-align: center;transition:.3s;}
 .statSys .icoArea{display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-pack: justify;-ms-flex-pack: justify;justify-content: center;-webkit-box-align: center;-ms-flex-align: center;align-items: center;width:76px;height:76px;background: #474747;border-radius: 100%;box-shadow: 0px 8px 13px 0px rgba(0, 0, 0, 0.14)}
 .statSys .icoArea img{width:30px;height:auto}
 .statSys .tooltip{position:absolute;top:50%;right:86px;transform: translateY(-50%);width:0;height:32px;line-height: 32px;background:#fb6017;color:#fff;border-radius: 20px;text-align: center;box-shadow: 0px 7px 11px 0px rgba(0, 0, 0, 0.21);white-space:nowrap;overflow: hidden;transition:.3s}
 .statSys:hover .tooltip{width:102px}
+
+.statSys.hide, .evalSys.hide{opacity:0;visibility: hidden;}
 
 @media screen and (max-width:1024px){
   .mySearchBtn, .evalSys, .statSys{right:24px}
