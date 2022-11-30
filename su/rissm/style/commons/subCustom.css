@@ -1,0 +1,51 @@
+@charset "utf-8";
+/* 국내와 해외 이미지 로고를 CSS 에서 처리되도록 수정 */
+.rLogo {position:relative;margin-left: 20px;z-index: 2;width: 22px;content:url(/images/commons/rLogo.png);}
+.foreignPage .rLogo {position:relative;margin-left: 20px;z-index: 2;width: 22px;content:url(/images/commons/rLogo_foreign.png);}
+
+/* 블럭 처리 효과 */
+.textReadOnly:disabled {
+	background-color: #f4f4f4;
+}
+/* display none 처리 */
+.dispNone {display: none;}
+
+/* 연관검색어 차트 */
+/* .chartAreaW{overflow-y: hidden;overflow-x: auto;border:1px solid #dadada;border-radius: 10px;box-shadow: 0 2px 4px rgba(0,0,0,0.04);} */
+
+/* 복사/대출신청 팝업 */
+.innerContBox .orderArea {padding: 0 0 0 10px;}
+.innerContBox .orderArea .titArea .tit {display:inline-block;color:#0f0f0f;font-family: PretendardSB,sans-serif;font-size:1.285rem}
+
+.divPopupArea {position:fixed;bottom:-100%;left:0;width:100%;height:100%;z-index: 20;opacity: 0;transition: bottom .3s, height .3s;box-sizing: border-box;background-image: linear-gradient(transparent calc(20% - 1px), #fff 20%);border-radius: 30px 30px 0 0;background:#fff}
+.divPopupArea.on {bottom:0;opacity: 1;}
+.divPopupArea.exportPop {height:70%}
+.divPopupArea.long {height:70%}
+.divPopupArea .popHeader {position: relative;padding:54px 24px 0 24px;}
+.divPopupArea .popHeader .titArea {padding-bottom:12px;border-bottom:1px solid #e2e2e2}
+.divPopupArea p.tit {color:#1a1a1a;font-size:1.428rem;font-family:PretendardB,sans-serif;}
+.divPopupArea p.tit.mini {font-size:1.142rem}
+.divPopupArea p.contTit {margin-top:4px;font-size:1.428rem;font-family: PretendardB,sans-serif;}
+.divPopupClose {display:block;position:absolute;top:16px;left:50%;transform: translateX(-50%);width:30px;height:12px;background:url(../../images/commons/close2.png) no-repeat center top;text-indent: -9999px;}
+.divPopupArea .btnW {margin-top:6px}
+.adobe img {height:22px;width:auto}
+.divPopupArea .popCont {padding: 20px 24px 20px 24px;overflow-y: auto;box-sizing: border-box;}
+
+.customChk3 {display:none}
+.customChk3 + label {display: inline-block;min-height:18px;background:url(../../images/commons/chk1.png) no-repeat left top 2px;padding-left:30px;padding-bottom:2px;}
+.customChk3 + label.disable {display: inline-block;min-height:18px;background:url(../../images/commons/disable.png) no-repeat left -1px top 2px;padding-left:30px;padding-bottom:2px;background-size: 19px;}
+.customChk3:checked + label {background:url(../../images/commons/chk2On.png) no-repeat left top 2px}
+
+.loading1, .loading2, .loading3 {display: table-cell;vertical-align: middle;height: 300px;text-align: center;transform: translate(-50%, -30%);position: absolute;left: 50%;}
+.sk-fading-circle {margin: 0 auto;}
+.loading_p {margin-top: 10px;}
+.statisticsChartArea {min-width: 480px;height: 600px;}
+.statisticsChartArea .cont{width: 100%; height: 100%;}
+
+/* 컨텐츠 박스 스타일 */
+.innerContBoxType2:not(:last-child) {margin-bottom:8px}
+.innerContBoxType2 {background:#fff;padding:20px 12px 40px 12px;border-radius: 15px;box-shadow: 0 0 8px rgba(0,0,0,0.04);}
+
+.addInfoMoreType2 {position:absolute;bottom:-25px;left:50%;transform: translateX(-50%);padding-right:18px;color:#000;font-size:1rem;}
+.addInfoMoreType2::after {content:"";display:block;position:absolute;top:50%;right:0;transform: translateY(-50%);width:14px;height:8px;background:url(../../images/search/btnArrow2.png) no-repeat}
+.addInfoMoreType2.on::after {transform: translateY(-50%) rotate(180deg);}
