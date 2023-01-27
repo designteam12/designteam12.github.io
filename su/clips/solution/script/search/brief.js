@@ -173,7 +173,7 @@ $(function(){
 			}
 		});
 	}
-	missrepo()
+	missrepo();
 	
 	$('.missrepoLayer .layerClose').on('click',function(){
 		$('.layerPopup').removeClass('on');
@@ -189,7 +189,7 @@ $(function(){
 		missrepo();
 	});
 	$(window).on('resize',function(){
-		if(winWidth < 768 && winWidth > 766){
+		if(winWidth < 768){
 			$('.holdingInfo .mobileTable tbody>tr').removeClass('footable-detail-show');
 			$('.holdingInfo .mobileTable .footable-row-detail').css('display','none')
 		}

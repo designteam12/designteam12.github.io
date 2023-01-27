@@ -114,8 +114,8 @@ $(document).ready(function(){
 			}
 		});
 	}
-	
 	missrepo();
+	
 	$('.missrepoLayer .layerClose').on('click',function(){
 		$('.layerPopup').removeClass('on');
 		$('.blackBg').removeClass('mo');
@@ -126,14 +126,16 @@ $(document).ready(function(){
 	});
 	
 	//footable이 새로운 tr을 append 하면서 스크립트 작동하지 않아 작성
-	$('.mobileTable.phone').click(function(){
+	$('body').click(function(){
 		missrepo();
 	});
 	$(window).on('resize',function(){
-		$('.mobileTable.phone').click(function(){
-			missrepo();
-		});
-	})
+		if(winWidth < 768){
+			$('.holdingInfo .mobileTable tbody>tr').removeClass('footable-detail-show');
+			$('.holdingInfo .mobileTable .footable-row-detail').css('display','none')
+		}
+	});
+	// 서가부재도서 신청 레이어 팝업
 
 	//slick
 	$('.browsingSlide').on('init', function(){
