@@ -383,7 +383,7 @@ textarea.txtArea{width:100%;height:85px;border:1px solid #d4d4d4;resize:none;box
 .layerPopup .popupContent .notice{text-align: center; color: #333333; font-size: 16px; line-height: 30px;}
 .layerPopupButtons{text-align: center; margin-top: 35px;}
 .layerPopupButtons a, .layerPopupButtons input{display: inline-block; margin: 4px; height: 37px; line-height: 35px; padding: 0 36px;}
-.layerPopup .layerCloseBtn, .layerPopup2 .layerCloseBtn{position: absolute; left:50%; top: -45px;transform: translateX(-50%); display: block; width: 30px; height: 30px; background: url(../../../image/ko/ico/closeBtn4.png) no-repeat center; text-indent: -9999px;}
+.layerPopup .layerCloseBtn, .layerPopup2 .layerCloseBtn{position: absolute; left:50%; top: -45px;transform: translateX(-50%); display: block; width: 30px; height: 30px; background: url(../../../image/ko/btn/closeBtn4.png) no-repeat center; text-indent: -9999px;}
 .layerPopup2 .layerCloseBtn{right: -86px; top: 0;}
 @media screen and (max-width:1280px){
     .layerPopup2{width: calc(100% - 180px); left: 48%;}
