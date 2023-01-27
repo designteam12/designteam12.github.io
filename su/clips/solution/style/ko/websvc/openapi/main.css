@@ -1,0 +1,36 @@
+@charset "utf-8";
+@media screen and (max-width:1024px){
+#divWrapper {min-width:100%}
+}
+/* 검색 영역 */
+.dataSearch {position:relative;overflow:hidden;width:466px;height:35px;margin:0 auto;margin-top:20px;margin-bottom:30px}
+.dataSearch fieldset {float:left;margin-right:64px;}
+.dataSearch .keyword {float:left;width:388px;height:14px;padding:9px 5px 8px 5px;border:2px solid #248bd8;outline:none}
+.dataSearch .searchBtn {display:inline-block;block;position:absolute;right:0;top:0;width:66px;height:35px;background:#248bd8;border:1px solid #1c7fca;text-align:center;color:#fff;cursor:pointer}
+
+/* 사이트 목록 */
+.onlineSearch .siteList {border:3px solid #e6e6e6}
+.onlineSearch .siteList ul {overflow:hidden;background:url(../../../../image/ko/solution/common/bg/openApiLine.gif) repeat-y 50% 0;}
+.onlineSearch .siteList li {float:left;position:relative;width:50%;height:27px;padding:17px 0 16px 0;border-bottom:1px solid #e6e6e6;line-height:27px}
+.onlineSearch .siteList li:first-child {width:100%;border-top:0 none}
+.onlineSearch .siteList li input {position:absolute;left:40px;top:23px;width:13px;height:13px}
+.onlineSearch .siteList li label {display:block;padding-left:63px;}
+.onlineSearch .siteList li label img {max-height:27px;vertical-align:top}
+
+@media screen and (min-width:768px) and (max-width:1024px){
+}
+
+@media screen and (min-width:0px) and (max-width:767px){
+/* 검색 영역 */
+.dataSearch {width:100%;margin:20px 0}
+.dataSearch fieldset  {float:none}
+.dataSearch .keyword {display:block;width:100%;padding:9px 0 8px 0;text-indent:5px}
+
+/* 사이트 목록 */
+.siteList {}
+.siteList ul {background:none}
+.siteList li {float:none;width:100%}
+.siteList li input {left:20px}
+.siteList li label {padding-left:43px;}
+.siteList .blankTag {display:none}
+}
