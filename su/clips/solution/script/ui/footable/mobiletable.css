@@ -1,18 +1,18 @@
 ﻿.mobileTable.breakpoint > tbody > tr > td.expand {
 	padding:12px 33px 12px 12px;
-	background:url(../../../../image/ko/ico/tableDownBtnBg.png) no-repeat 95% 50%;
+	background:url(../../../image/ko/btn/tableDownBtnBg.png) no-repeat 95% 50%;
 }
 .mobileTable.breakpoint > tbody > tr.footable-detail-show > td.expand {
-	background:url(../../../../image/ko/ico/tableUpBtnBg.png) no-repeat 95% 50%;
+	background:url(../../../image/ko/btn/tableUpBtnBg.png) no-repeat 95% 50%;
 }
 
 
 .mobileTable.breakpoint > tbody > tr > td.tableTit.expand {
 	padding:12px 23px 12px 12px;
-	background:url(../../../../image/ko/ico/tableDownBtnBg.png) no-repeat 97% 50%;
+	background:url(../../../image/ko/btn/tableDownBtnBg.png) no-repeat 97% 50%;
 }
 .mobileTable.breakpoint > tbody > tr.footable-detail-show > td.tableTit.expand {
-	background:url(../../../../image/ko/ico/tableUpBtnBg.png) no-repeat 97% 50%;
+	background:url(../../../image/ko/btn/tableUpBtnBg.png) no-repeat 97% 50%;
 }
 
 
