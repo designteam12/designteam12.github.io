@@ -1,0 +1,46 @@
+@charset "utf-8";
+.media a {display:inline-block;width:36px;height:16px;margin-right:5px;background:#9cafb8;color:#fff;text-align:center;font-size:12px;line-height:18px}
+/* 가나다리스트 */
+.atoz{border:1px solid #e6e6e6;background-color:#eee;margin-bottom:40px;}
+.atoz div{margin:0 0 8px 0;text-align:center}
+.atoz div:first-child{margin:10px 0 8px 0}
+.atoz a{display:inline-block;width:27px;height:30px;margin:0 0 2px 2px;background-color:#fff;border:1px solid #ddd;color:#1a1a1a;line-height:2.2em}
+.atoz a:hover{font-weight:600;border:1px solid #000}
+.atoz a.atozTotal,.atoz a.atozEtc{width:64px}
+.atoz a.active{background-color:#2ed8de;border:1px solid #1fcbd1;color:#fff;font-weight:600}
+.atozTitle{font-size:14px;background:url(../../../../image/ko/solution/common/ico/limitSearchBg.png) no-repeat 0 0;padding:0 20px 0 45px;height:33px;}
+.atozTitle a{display:block;color:#000;background:url() no-repeat 0 0;}
+.selectedAtoz{display:none;margin-bottom:10px;padding:10px 20px;background-color:#4460a9;color:#fff}
+.inputTextType1{width:278px;}
+@media screen and (min-width:0px) and (max-width:767px){
+	.atoz{display:none;margin-bottom:10px;background:none;border:none;}
+	.atoz div{width:275px;margin:0 auto;text-align:left}
+	.atoz div:first-child{margin:0 auto}
+	.atoz div a{text-align:center}
+	.atoz div a:firtst-child{}
+	.selectedAtoz{display:block;}
+}
+.atoz div a.all{width: 64px;}
+.mobileTable tr td.detail a{color: #305ed6;}
+td.dbTitle{width:20%; text-align: left;}
+td.dbTitle img{margin-right:5px;vertical-align:bottom}
+span.moreDetail{color: #305ed6; float:right;}
+span.openAccess{border-color:#1c7fca;background:#248bd8;color:#fff;}
+
+.subjectDepth02 dl dt.selected{font-weight:600}
+.subjectDepth02 dl dd ul li.selected{font-weight:600}
+/* 데이터베이스검색 */
+.dbSearch{text-align:center}
+
+/* 데이터베이스검색 정보(아이콘) */
+.dbSearchInfo{overflow:hidden;margin-bottom:10px;}
+.dbSearchInfo ul{float:right}
+.dbSearchInfo ul li{float:left;margin:0 0 5px 10px;}
+.dbSearchInfo ul li img{vertical-align:middle;margin-right:5px}
+.dbSearchInfo ul li.dbSearchInfo1 img{width:16px;height:17px}
+.dbSearchInfo ul li.dbSearchInfo2 img{width:16px;height:17px}
+.dbSearchInfo ul li.dbSearchInfo3 img{width:19px;height:17px}
+.dbSearchInfo ul li.dbSearchInfo4 img{width:19px;height:17px}
+
+.mobileTable th.headerSortUp {background:url(../../../../image/ko/solution/common/ico/tableOff.png) no-repeat 100% 50%}
+.mobileTable th.headerSortDown {background:url(../../../../image/ko/solution/common/ico/tableOn.png) no-repeat 100% 50%}
