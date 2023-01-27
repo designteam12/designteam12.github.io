@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(function(){
 	//사이즈 변수 선언(공통 사용)
 	var winWidth = window.innerWidth || document.documentElement.clientWidth;//미디어쿼리 사이즈와 $(window).width()가 인식하는 px단위 사이즈가 달라서 선언한 변수 : clinentWidth 와 innerWidth의 사이즈는 동일하나 innerWidth는 익스플로러 9 미만 버전은 인식하지 못하므로 동시선언
 
@@ -145,6 +145,10 @@ $(document).ready(function(){
 		$('.reservationLayer').addClass('on');
 		$('.blackBg').addClass('mo');
 		$(this).addClass('this');
+		if(winWidth < 768){
+			var ph = $('.reservationLayer .popTitArea').outerHeight();
+			$('.reservationLayer .popupContent').css({'height':'calc(100% - ' +ph+'px)'})
+		}
 
 	});
 	$('.reservationLayer .layerClose').on('click',function(){
@@ -152,23 +156,45 @@ $(document).ready(function(){
 		$('.blackBg').removeClass('mo');
 		$('.reservationBtn.this').focus();
 		$('.reservationBtn').removeClass('this');
+		$('.reservationLayer').removeClass('long');
 		return false;
 	});
 	// 예약 레이어 팝업
 
 	// 서가부재도서 신청 레이어 팝업 
-	$('.missrepo').on('click',function(){
-		$('.missrepoLayer').addClass('on');
-		$('.blackBg').addClass('mo');
-		$(this).addClass('this')
-	});
+	function missrepo(){
+		$('.missrepo').on('click',function(){
+			$('.missrepoLayer').addClass('on');
+			$('.blackBg').addClass('mo');
+			$(this).addClass('this');
+			if(winWidth < 768){
+				var ph = $('.missrepoLayer .popTitArea').outerHeight();
+				$('.missrepoLayer .popupContent').css({'height':'calc(100% - ' +ph+'px)'})
+			}
+		});
+	}
+	missrepo()
+	
 	$('.missrepoLayer .layerClose').on('click',function(){
 		$('.layerPopup').removeClass('on');
 		$('.blackBg').removeClass('mo');
 		$('.missrepo.this').focus();
 		$('.missrepo').removeClass('this');
+		$('.missrepoLayer').removeClass('long');
 		return false;
 	});
+	
+	//footable이 새로운 tr을 append 하면서 스크립트 작동하지 않아 작성
+	$('body').click(function(){
+		missrepo();
+	});
+	$(window).on('resize',function(){
+		if(winWidth < 768 && winWidth > 766){
+			$('.holdingInfo .mobileTable tbody>tr').removeClass('footable-detail-show');
+			$('.holdingInfo .mobileTable .footable-row-detail').css('display','none')
+		}
+	});
+	//footable-detail-show
 	// 서가부재도서 신청 레이어 팝업
 
 

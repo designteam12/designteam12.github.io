@@ -44,16 +44,41 @@ $(document).ready(function(){
 		
 	});
 
+	//팝업공통옵션
+	$('.layerPopup .popupContent').on('scroll',function(){
+		winWidth = window.innerWidth || document.documentElement.clientWidth;
+		if(winWidth < 768){
+			if($(this).hasScrollBar()){
+				$(this).parents('.layerPopup').addClass('long');
+			}
+		}
+		
+	});
+	$(window).on('resize',function(){
+		winWidth = window.innerWidth || document.documentElement.clientWidth;
+		if(winWidth < 768){
+			if($('.layerPopup').hasClass('on')){
+				var ph = $('.layerPopup .popTitArea').outerHeight();
+				$('.layerPopup .popupContent').css({'height':'calc(100% - ' +ph+'px)'})
+			}
+		}
+	});
+	
 	//qr 레이어 팝업
 	$('.bookQrBtn').on('click',function(){
 		$('.bookQrCode').addClass('on');
 		$('.blackBg').addClass('mo');
+		if(winWidth < 768){
+			var ph = $('.bookQrCode .popTitArea').outerHeight();
+			$('.bookQrCode .popupContent').css({'height':'calc(100% - ' +ph+'px)'})
+		}
 	});
 
 	$('.bookQrCode .layerClose').on('click',function(){
 		$('.layerPopup').removeClass('on');
 		$('.blackBg').removeClass('mo');
 		$('.bookQrBtn').focus();
+		$('.bookQrCode').removeClass('long');
 		return false;
 	});
 	
@@ -62,6 +87,10 @@ $(document).ready(function(){
 		$('.reservationLayer').addClass('on');
 		$('.blackBg').addClass('mo');
 		$(this).addClass('this');
+		if(winWidth < 768){
+			var ph = $('.reservationLayer .popTitArea').outerHeight();
+			$('.reservationLayer .popupContent').css({'height':'calc(100% - ' +ph+'px)'})
+		}
 
 	});
 	$('.reservationLayer .layerClose').on('click',function(){
@@ -69,22 +98,42 @@ $(document).ready(function(){
 		$('.blackBg').removeClass('mo');
 		$('.reservationBtn.this').focus();
 		$('.reservationBtn').removeClass('this');
+		$('.reservationLayer').removeClass('long');
 		return false;
 	});
 
 	// 서가부재도서 신청 레이어 팝업 
-	$('.missrepo').on('click',function(){
-		$('.missrepoLayer').addClass('on');
-		$('.blackBg').addClass('mo');
-		$(this).addClass('this')
-	});
+	function missrepo(){
+		$('.missrepo').on('click',function(){
+			$('.missrepoLayer').addClass('on');
+			$('.blackBg').addClass('mo');
+			$(this).addClass('this');
+			if(winWidth < 768){
+				var ph = $('.missrepoLayer .popTitArea').outerHeight();
+				$('.missrepoLayer .popupContent').css({'height':'calc(100% - ' +ph+'px)'})
+			}
+		});
+	}
+	
+	missrepo();
 	$('.missrepoLayer .layerClose').on('click',function(){
 		$('.layerPopup').removeClass('on');
 		$('.blackBg').removeClass('mo');
 		$('.missrepo.this').focus();
 		$('.missrepo').removeClass('this');
+		$('.missrepoLayer').removeClass('long');
 		return false;
 	});
+	
+	//footable이 새로운 tr을 append 하면서 스크립트 작동하지 않아 작성
+	$('.mobileTable.phone').click(function(){
+		missrepo();
+	});
+	$(window).on('resize',function(){
+		$('.mobileTable.phone').click(function(){
+			missrepo();
+		});
+	})
 
 	//slick
 	$('.browsingSlide').on('init', function(){
