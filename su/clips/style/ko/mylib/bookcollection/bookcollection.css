@@ -1,0 +1,105 @@
+@charset "utf-8";
+
+.cke_text{border: 1px solid #e3e3e3; border-radius: 3px; min-height: 240px; background: #fff;}
+.adminW::after{display: block; content: ''; clear: both;}
+.adminL{float: left; width: 290px; box-sizing: border-box; margin-right: 24px;}
+.adminR{float: right; width: calc(100% - 314px); box-sizing: border-box; padding: 20px 32px 20px;}
+
+.adminL{border: 1px solid #e3e3e3; border-radius: 3px; padding: 10px 0 70px 0;}
+.adminR{border: 1px solid #e3e3e3; border-radius: 3px; background-color: #f3f3f3;}
+.adminL a{display: block; position: relative; line-height: 28px;}
+
+.depth1 > li{position: relative; margin-top: 10px;}
+.depth1 > li:not(:last-of-type)::after{display: block; content: ''; width: 1px; height: calc(100% - 5px); background: #ededed; position: absolute; left: 26px; top: 25px;}
+.depth1>li>div {display:inline-block;}
+.depth1>li>.tit {position:relative;padding:0 40px; color: #1a1a1a; font-size: 16px;}
+.depth1>li>.tit::before {display: block; content: ''; width: 9px; height: 9px; border-radius: 50%; background: #5755d9; position: absolute; left: 22px; top: 9px;}
+.depth1>li>.toggleBtn {display:inline-block;width: 20px; height: 20px; background: url(../../../../image/ko/ico/selectArrow.png) no-repeat center; position: absolute; right: 22px; top:4px; transform: rotate(0); transition: 0.3s;text-indent: -9999px;}
+.depth1>li.on>.toggleBtn {transform: rotate(180deg);-webkit-transform: rotate(180deg)}
+
+.depth2{margin-top: 4px;overflow: hidden;}
+.depth2 > li{padding-top: 4px; position: relative;}
+.depth2 > li::after{display: block; content: ''; width: 1px; height: 20px; background: #ededed; position: absolute; left: 49px; top: -7px;}
+.depth2 > li > a{padding-right: 22px; padding-left: 65px;}
+.depth2 > li > a span{ color: #666666; font-size: 15px; position: relative; display: inline-block; padding-right: 20px;}
+.depth2 > li.depthArrow.on > a span::after{transform: rotate(180deg);}
+.depth2 > li > a.zero span::after{display: block; content: ''; width: 12px; height: 7px; background: url(../../../../image/ko/ico/adminArrow2.png) no-repeat; position: absolute; right: 0; top:12px; transform: rotate(0);}
+
+.depth2>li>div {display:inline-block;position:relative;}
+.depth2>li>div>.tit {padding-left:65px;color: #333; font-size: 15px; position: relative; display: inline-block; padding-right: 20px;}
+.depth2>li>div>.tit::before {display: block; content: ''; width: 9px; height: 9px; border-radius: 50%; background: #29c3e9; position: absolute; left: 45px; top: 9px;}
+.depth2>li>div>.tit::after {content:"";display:block;position: absolute;top:0;left:0;width:0;height:100%;background:#cef8ff;z-index: -1;}
+.depth2>li>div>.tit:hover::after {width:800%}
+.depth2>li>div>.tit.select::after {width:800%}
+.depth2>li>div>.toggleBtn {display:inline-block;width: 20px; height: 20px; background: url(../../../../image/ko/ico/selectArrow.png) no-repeat center; position: absolute; right: -2px; top:5px; transform: rotate(0); transition: 0.3s;text-indent: -9999px;}
+.depth2>li.on>div>.toggleBtn {transform: rotate(180deg);-webkit-transform: rotate(180deg)}
+
+.depth3 {margin-top: 8px;overflow: hidden;}
+.depth3 > li{padding-top: 4px; position: relative;}
+.depth3 > li::after{display: block; content: ''; width: 1px; height: 20px; background: #ededed; position: absolute; left: 69px; top: -7px;}
+.depth3 > li > a{padding-left: 85px; }
+.depth3 > li > a span{color: #999999; font-size: 15px; display: inline-block; padding-right: 24px;}
+.depth3>li>div {display:inline-block;position:relative}
+.depth3>li>div>.tit {position:relative;padding-left:85px;color: #555; font-size: 15px; display: inline-block; padding-right: 24px;}
+.depth3>li>div>.tit::before{display: block; content: ''; width: 9px; height: 9px; border-radius: 50%; background: #ffa107; position: absolute; left: 65px; top: 9px;}
+.depth3>li>div>.tit::after {content:"";display:block;position: absolute;top:0;left:0;width:0;height:100%;background:#cef8ff;z-index: -1;}
+.depth3>li>div>.tit:hover::after {width:800%}
+.depth3>li>div>.tit.select::after {width:800%}
+.depth3>li>div>.searchBtn {display:block;position:absolute;top:6px;right:0;width:18px;height:18px;background: url(../../../../image/ko/ico/adminIcon.png) no-repeat;text-indent: -9999px;}
+
+.depth3>li>div.move {margin-right:28px}
+.depth3>li>div>.toggleBtn {display:inline-block;width: 20px; height: 20px; background: url(../../../../image/ko/ico/selectArrow.png) no-repeat center; position: absolute; right: -2px; top:5px; transform: rotate(0); transition:transform 0.3s;text-indent: -9999px;}
+.depth3>li>div.move>.toggleBtn {right:-20px}
+.depth3>li.on>div>.toggleBtn {transform: rotate(180deg);-webkit-transform: rotate(180deg)}
+
+.depth4 {margin-top: 8px;overflow: hidden;}
+.depth4 > li{padding-top: 4px; position: relative;}
+.depth4 > li::after{display: block; content: ''; width: 1px; height: 20px; background: #ededed; position: absolute; left: 90px; top: -7px;}
+.depth4 > li > a{padding-left: 85px; }
+.depth4 > li > a span{color: #999999; font-size: 15px; display: inline-block; padding-right: 24px;}
+.depth4>li>div {display:inline-block;position:relative}
+.depth4>li>div>.tit {position:relative;padding-left:107px;color: #555; font-size: 15px; display: inline-block; padding-right: 24px;}
+.depth4>li>div>.tit::before{display: block; content: ''; width: 9px; height: 9px; border-radius: 50%; background: #808080; position: absolute; left: 86px; top: 9px;}
+.depth4>li>div>.tit::after {content:"";display:block;position: absolute;top:0;left:0;width:0;height:100%;background:#cef8ff;z-index: -1;}
+.depth4>li>div>.tit:hover::after {width:800%}
+.depth4>li>div>.tit.select::after {width:800%}
+.depth4>li>div>.searchBtn {display:block;position:absolute;top:6px;right:0;width:18px;height:18px;background: url(../../../../image/ko/ico/adminIcon.png) no-repeat;text-indent: -9999px;}
+.depth4>li>div.move {margin-right:28px}
+.depth4>li>div>.toggleBtn {display:inline-block;width: 20px; height: 20px; background: url(../../../../image/ko/ico/selectArrow.png) no-repeat center; position: absolute; right: -2px; top:5px; transform: rotate(0); transition:transform 0.3s;text-indent: -9999px;}
+.depth4>li>div.move>.toggleBtn {right:-20px}
+.depth4>li.on>div>.toggleBtn {transform: rotate(180deg);-webkit-transform: rotate(180deg)}
+
+.depth5 {margin-top: 8px;overflow: hidden;}
+.depth5 > li{padding-top: 4px; position: relative;}
+.depth5 > li::after{display: block; content: ''; width: 1px; height: 20px; background: #ededed; position: absolute; left: 108px; top: -7px;}
+.depth5 > li > a{padding-left: 85px; }
+.depth5 > li > a span{color: #999999; font-size: 15px; display: inline-block; padding-right: 24px;}
+.depth5>li>div {display:inline-block;position:relative}
+.depth5>li>div>.tit {position:relative;padding-left:125px;color: #555; font-size: 15px; display: inline-block; padding-right: 24px;}
+.depth5>li>div>.tit::before{display: block; content: ''; width: 9px; height: 9px; border-radius: 50%; background: #d0d0d0; position: absolute; left: 104px; top: 9px;}
+.depth5>li>div>.tit::after {content:"";display:block;position: absolute;top:0;left:0;width:0;height:100%;background:#cef8ff;z-index: -1;}
+.depth5>li>div>.tit:hover::after {width:800%}
+.depth5>li>div>.tit.select::after {width:800%}
+.depth5>li>div>.searchBtn {display:block;position:absolute;top:6px;right:0;width:18px;height:18px;background: url(../../../../image/ko/ico/adminIcon.png) no-repeat;text-indent: -9999px;}
+
+.adminR .bunchTit{color: #384655; font-size: 16px; display: block; margin-bottom: 4px;}
+.findFiles::after{display: block; content: ''; clear: both;}
+.findFiles .findFilesInput{float: left; width: calc(100% - 110px); border-right: none;}
+.findFiles .findFileBtn{float: left; height: 40px; text-align: center; box-sizing: border-box; line-height: 40px; background-color: #d0d0d0; color: #555; width: 110px; border: 1px solid #e3e3e3; border-left: none;}
+.adminR .bunch{margin-bottom: 20px;}
+.adminR .url{color: #636674; font-size: 15px;}
+
+@media screen and (max-width:900px){
+    .adminL{width: 40%;}
+    .adminR{width: calc(60% - 24px);}
+}
+@media screen and (max-width:767px){
+    .adminL{float: none; width: 100%; margin-right: 0; margin-bottom: 20px; padding-bottom: 20px;}
+    .adminR{float: none; width: 100%; padding: 20px 20px 10px;}
+}
+
+
+
+/* 모두접기 모두 펼치기 추가 */
+.allBtns {margin:0 8px 20px 0;text-align: right;}
+.allBtns .allBtn {display:inline-block;width:78px;height:28px;margin-right:3px;line-height: 28px;background:#e6e6e6;border:1px solid #d6d6d6;border-radius: 3px;color:#333;font-size:13px;letter-spacing: -0.05em;text-align: center;}

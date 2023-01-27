@@ -1,0 +1,428 @@
+@charset "utf-8";
+/* studyRoom */
+
+/* tab */
+.tabs .tabList{margin-left: 20px;}
+.tabs .tabList li{display: inline-block;}
+.tabs .tabList li a{display: inline-block; padding: 0 30px 10px 30px; color: #1b1b1b; font-size: 17px; font-family:NotoSansM, sans-serif;}
+.groupRemark{margin-bottom: 30px;}
+.groupRemark li{display: none;}
+.groupRemark li.on{display: block; background: #f3f3f3; padding: 30px; box-sizing: border-box;}
+.groupRemark li p{color: #333333;}
+@media screen and (max-width:767px){
+    .tabs .tabList{margin-left: 8px;}
+    .tabs .tabList li a{padding: 0 15px 10px 15px;}
+    .groupRemark{margin-bottom: 24px;}
+    .groupRemark li.on{padding: 16px;}
+}
+/* tab */
+.searchArea{margin-bottom: 25px; padding: 5px 55px 20px; border: 1px solid #e3e3e3; border-radius: 3px;}
+.searchArea .selectBox1{min-width: 110px; width: auto;}
+.searchArea.center .bunch{margin-right: 16px;}
+.searchArea .hasDatepicker {margin:5px 0}
+.searchArea input[type="text"], .searchArea select {margin-left:10px}
+@media screen and (max-width:767px){
+    .searchArea {padding:16px 8px 20px}
+    .searchArea.center .bunch {display:block}
+    .searchArea.center .bunch {margin-right:0;}
+    .searchArea.center .bunch.ml30 {display:inline-block;margin-left:0 !important;margin-right:12px}
+    .searchArea .botBtnType2 {margin-left:0 !important}
+}
+
+/* 시설예약 */
+.resList .count{color: #3a3a3a; font-size: 16px;}
+.resList > ul > li{height: 85px; margin-top: 16px; box-sizing: border-box; border: 1px solid #e3e3e3; border-radius: 5px;}
+.resList > ul > li::after{display: block; content: ''; clear: both;}
+.resList > ul > li > div {float: left; width: calc(100% - 130px);}
+.resList > ul > li > div > div:first-of-type{float: left; padding: 20px 0 20px 24px;}
+.resList > ul > li .type{min-width: 75px; margin-right: 32px; text-align: center; background: #c2c2c2; display: inline-block; vertical-align: middle; padding: 0 12px; height: 30px; line-height: 30px; color: #fff; font-size: 14px; border-radius: 20px; box-sizing: border-box;}
+.resList > ul > li .info{display: inline-block; vertical-align: middle; margin-right: 60px;}
+.resList > ul > li .info.timeW{margin-right:0}
+.resList > ul > li .info.date2W{min-width: 0;}
+.resList > ul > li .info .label{color: #8d8d8d; font-size: 13px;}
+.resList > ul > li .info p{color: #333333;}
+.resList > ul > li .info p.date{font-family: RobotoB,sans-serif; font-size: 16px;}
+.resList > ul > li .info p.date2{color: #555555; font-family: Roboto,sans-serif;}
+.resList > ul > li .info p.time{margin:0;color: #3b3b3b; font-family: Roboto,sans-serif;}
+.resList > ul > li .info p strong{color: #3b3b3b;}
+.resList > ul > li .resState{float: right; background: #f2f2f2; width: 130px; height: 100%; padding-left: 27px; box-sizing: border-box;}
+.resList > ul > li .resState span{display: block; color: #838383; padding-left: 24px; position: relative; line-height:85px;}
+.resList > ul > li .resState span::after{display: block; content: ''; width: 19px; height: 14px; position: absolute; left: 0; top: 34px; background: url(../../../../image/ko/ico/checked.png) no-repeat center;}
+.resList > ul > li .resState.resCancel span{color: #3b3b3b;}
+.resList > ul > li .resState.resCancel span::after{width: 14px; height: 14px; background: url(../../../../image/ko/ico/closeBtn3.png) no-repeat center; opacity: 0.54;}
+.resList > ul > li .resState.moreTime span::after{width: 16px; height: 14px; background: url(../../../../image/ko/ico/checked2.png) no-repeat center; background-size: 16px auto; image-rendering: -webkit-optimize-contrast;}
+.resList > ul > li .resState.doubleBtn{height: 50%;}
+.resList > ul > li .resState.doubleBtn span{line-height:20px; color: #3b3b3b;}
+.resList > ul > li .resState.doubleBtn.resCancel span::after{top: 4px;}
+.resList > ul > li .resState.doubleBtn.moreTime span::after{top: 3px;}
+.resList > ul > li .resState.resCancel.doubleBtn{padding-top: 15px;}
+.resList > ul > li .resState.moreTime.doubleBtn{padding-top: 4px; padding-bottom: 11px;}
+
+
+/* 버튼 두개 타입 추가 */
+.resList > ul > li > div.listBtns {float: right; background: #f2f2f2; width: 130px; height: 100%; padding-left: 27px; box-sizing: border-box;}
+.resList > ul > li > div.listBtns.devide .resState {height:auto}
+.resList > ul > li > div.listBtns.devide .resState:nth-of-type(1) {padding-top:15px}
+.resList > ul > li > div.listBtns.devide .resState:nth-of-type(2) {padding-bottom:15px;padding-top:7px}
+.resList > ul > li > div.listBtns.devide .resState span {line-height:22px}
+.resList > ul > li div.listBtns.devide .resState span::after {top:5px}
+
+@media screen and (max-width:1200px){
+    .resList > ul > li > div > div:first-of-type{padding-left: 12px;}
+    .resList > ul > li > div > div:last-of-type{padding-right: 12px;}
+    .resList > ul > li .info{margin-right: 40px;}
+}
+@media screen and (max-width:1024px){
+    .resList > ul > li{height: auto}
+    .resList > ul > li > div {float:none;width:100%}
+
+    .resList > ul > li .type{margin-bottom: 8px;}
+    .resList > ul > li .info{display: block; min-width: 0;}
+    .resList > ul > li .info.timeW{min-width: 0;}
+    .resList > ul > li .info .label{display: inline-block; min-width: 55px;}
+    .resList > ul > li .info p{display: inline-block;}
+    .resList > ul > li > div > div:first-of-type, .resList > ul > li > div > div:last-of-type{float: none;}
+    .resList > ul > li > div > div:last-of-type{padding-left: 12px;}
+
+    .resList > ul > li > div.listBtns {float:none;width:100%;padding:0;text-align:center}
+    .resList > ul > li div.listBtns .resState {float:none;width:100%}
+    .resList > ul > li > div.listBtns.devide .resState {float:left;width:50%}
+    .resList > ul > li > div.listBtns.devide .resState:nth-of-type(1), .resList > ul > li > div.listBtns.devide .resState:nth-of-type(2) {padding:0 12px;text-align:center}
+    .resList > ul > li > div.listBtns.devide .resState span, .resList > ul > li > div.listBtns .resState span {display:inline-block;width:auto;line-height:41px}
+    .resList > ul > li div.listBtns.devide .resState span::after {top:13px}
+    .resList > ul > li .resState span::after{top: 13px;}
+
+}
+@media screen and (max-width:1024px){
+    .resList > ul > li > div{float: none; width: 100%}
+    .resList > ul > li{height: auto;}
+    .resList > ul > li .resState{float: none; width: 100%; height: 40px; display: block; text-align: center; padding-left: 0;}
+    .resList > ul > li .resState span{line-height: 40px; padding-left: 24px; display: inline-block;}
+    .resList > ul > li .resState span::after{top: 13px;}
+    .resList > ul > li .resState.doubleBtn {float:left;width:50%;height:40px;padding:0;line-height:38px}
+    .resList > ul > li .resState.resCancel.doubleBtn {padding:0;border-right:1px solid #ddd;}
+    .resList > ul > li .resState.moreTime.doubleBtn {padding:0}
+    .resList > ul > li .doubleBtn:nth-of-type(1), .resList > ul > li .doubleBtn:nth-of-type(2) {padding:0 12px;text-align:center}
+    .resList > ul > li .doubleBtn span, .resList > ul > li .doubleBtn span {display:inline-block;width:auto;line-height:41px}
+    .resList > ul > li .doubleBtn span::after {top:13px}
+
+}
+/* 시설예약 */
+
+/* 좌석예약 */
+.seatList > ul > li{margin-top: 16px; padding: 20px 24px; box-sizing: border-box; border: 1px solid #e3e3e3; border-radius: 5px; display: -webkit-box; display: -ms-flexbox; display: flex;
+    -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between;
+    -webkit-box-align: center; -ms-flex-align: center; align-items: center;
+    }
+.seatList span{color: #555;}
+.seatList .type{display: inline-block; margin-right: 12px; color: #fff; font-size: 14px; padding: 0 14px; height: 30px; line-height: 30px; min-width: 75px; text-align: center; background: #4d2bf4;border-radius: 20px; box-sizing: border-box;}
+.seatList .full .type{background-color: #959595;}
+.seatList .disable .type{background-color: #e50b34;}
+.seatList .location strong{display: inline-block; margin-right: 12px; color: #3b3b3b; font-size: 18px; font-family: NotoSansM,RobotoB,sans-serif;}
+.seatList .count{margin-right: 20px;}
+.seatList .percent{min-width: 120px; display: inline-block;}
+.seatList .percent strong{color: #3b3b3b; font-size: 28px; font-family: RobotoB,sans-serif; margin: 0 4px;}
+.seatList .useTime .time{color: #333; margin-left: 4px;}
+.seatList .seatState{display: inline-block; min-width: 75px; vertical-align: middle; margin-left: 60px;}
+.seatList .seatState li{display: inline-block; width: 32px; height: 32px; text-indent: -9999px; border-radius: 50%; margin-left: 8px;}
+.seatList .seatState li:first-of-type{margin-left: 0;}
+.seatList .seatState li.laptopSeat{background: #5a5a5a url(../../../../image/ko/ico/seatResIcon1.png) no-repeat center;}
+.seatList .seatState li.disabledSeat{background: #5a5a5a url(../../../../image/ko/ico/seatResIcon2.png) no-repeat center;}
+.progressBar{margin-left: 4px; display: inline-block; vertical-align: middle; background: #e3e3e3;border-radius: 20px; width: 200px; height: 8px; position: relative;}
+.progressBar .current{display: block; width: 50%; background: #2196f3; border-radius: 20px; height: 8px; position: absolute; left: 0; top: 0;}
+@media screen and (max-width:1200px){
+    .seatList > ul > li{padding: 16px 12px;}
+    .seatList .seatState{margin-left: 30px;}
+}
+@media screen and (max-width:1024px){
+    .seatList > ul > li{display: block;}
+    .seatList > ul > li > div:not(:first-of-type){margin-top: 20px;}
+}
+/* 좌석예약 */
+
+/* 예약정보 */
+.bookingTable{min-width: 550px;}
+.bookingTable tr td{padding: 6px 0; border-bottom: 1px solid #e8e8e8;}
+.bookingTable tr td:nth-of-type(1){padding-left: 28px; position: relative; color: #222222; font-family: NotoSansM, sans-serif;}
+.bookingTable tr td:nth-of-type(1)::after{display: block; content: ''; width: 3px; height: 3px; position: absolute; left: 14px; top: 16px;}
+.bookingTable tr td:nth-of-type(2){text-align: right; padding-right: 30px;}
+.bookingTable tr td:nth-of-type(2).state1{color: #010101;}
+.bookingTable tr td:nth-of-type(2).state2{color: #555555;}
+@media screen and (max-width:767px){
+    .bookingTable{min-width: 0;}
+    .bookingTable tr td:nth-of-type(1){padding-left: 12px;}
+    .bookingTable tr td:nth-of-type(1)::after{left: 4px;}
+    .bookingTable tr td:nth-of-type(2){padding-right: 8px;}
+}
+/* 예약정보 */
+
+
+/* 예약신청 */
+.resInfoTable .popupContent{border-radius: 0;}
+.resInfoTable{width: 600px;}
+.selectBookingTimeW{padding: 24px 0 0 0;}
+.selectBookingTime{margin-bottom: 30px; text-align: center; color: #444; font-size: 20px;}
+
+.selectBookingTime span span{font-size: 20px; font-family: RobotoM,sans-serif; margin: 0 4px;}
+.selectBookingTime span span{color: #4d2bf4;}
+
+.timeSelect{overflow-x: scroll;margin-bottom: 20px; background: #edf0f6; border-radius: 20px; padding: 12px 16px 20px; box-sizing: border-box;}
+.timeSelect > div {width: auto; white-space: nowrap;}
+.timeSelect > div > div{display: inline-block; margin-right: 12px;}
+.timeSelect .hour{color: #262626; font-size: 14px;}
+.timeSelect ul li{display: inline-block; padding-top: 12px; }
+.timeSelect ul li a{display: block; width: 18px; height: 18px; border-radius: 3px; text-indent: -9999px; position: relative;}
+.timeSelect ul li.select a::after{display: block; content: ''; width: 7px; height: 7px; position: absolute; left: 4px; top: -11px; background: url(../../../../image/ko/ico/selectTime.png) no-repeat center;}
+.desTxt p{color: #444; padding-left: 8px;}
+@media screen and (max-width:767px){
+    .resInfoTable{width: 95%;}
+    .timeSelect{width: 100%;}
+    .selectBookingTime > span{display: block;}
+    .selectBookingTimeW .legend {text-align: left;}
+    .selectBookingTimeW .legend li {margin:4px 0}
+    .selectBookingTimeW .legend li:not(:last-of-type){margin-right: 12px;}
+}
+/* 예약신청 */
+
+/* popup2 */
+.popupHeader{background: #154d7b; padding: 40px; display: -webkit-box; display: -ms-flexbox; display: flex;
+    -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between;
+    -webkit-box-align: center; -ms-flex-align: center; align-items: center;}
+.popupHeader p{color: #ffffff; font-size: 16px;}
+.popupHeader select{background: none; border: none; padding-right: 28px; color: #ffffff; font-size: 25px; font-family: NotoSansM,sans-serif; background: url(../../../../image/ko/ico/selectArrow4.png) no-repeat right center;}
+.popupHeader select option{color: #000;}
+.popupContent2{background: #f6f6f6; padding: 30px 32px 70px; height: 65vh; overflow-y: auto;}
+@media screen and (max-width:1200px){
+    .popupHeader{padding: 30px;}
+    .popupContent2{padding: 30px 24px 70px;}
+}
+@media screen and (max-width:900px){
+    .popupHeader{display: block; padding:30px 20px;}
+    .popupHeader select{margin: 12px 0; font-size: 22px;}
+    .popupContent2{padding: 24px 20px 70px;}
+}
+@media screen and (max-width:767px){
+    .popupContent2{height: 55vh;}
+}
+/* popup2 */
+
+/* 좌석 그래프 보기 */
+.graphInfo{margin-bottom: 70px; display: -webkit-box; display: -ms-flexbox; display: flex;
+    -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between;
+    -webkit-box-align: center; -ms-flex-align: center; align-items: center;}
+.graphInfo .totalStatus ul li{display: inline-block; margin-right: 28px; color: #333;}
+.graphInfo .totalStatus ul li span{display: inline-block; margin-left: 4px; font-size: 28px; font-family: RobotoB,sans-serif;}
+.graphInfo .totalStatus ul li.tot span{color: #232323;}
+.graphInfo .totalStatus ul li.use span{color: #e33614;}
+.graphInfo .totalStatus ul li.able span{color: #4d2bf4;}
+.graphInfo .legend{text-align: right; margin-bottom: 0;}
+
+.viewTab{position: relative; }
+.viewTab .tab1{height: 730px;}
+.viewTab .tab1 > li{display: inline-block; margin-left: 8px;}
+.viewTab .tab1 > li.on > a{color: #fff; border: 1px solid #4d2bf4;background: #4d2bf4;}
+.viewTab .tab1 > li > a{display: inline-block; color: #737373; background: #ffffff; font-size: 16px; text-align: center; min-width: 140px; border: 1px solid #d7d7d7; height: 43px; line-height: 43px; border-radius: 25px; box-sizing: border-box;}
+.viewTab .tab1 > li > div{display: none;}
+.viewTab .tab1 > li.on > div{display: block;}
+
+.selectTimeInfo{position: absolute; right: 0; top: 15px;}
+.selectTimeInfo p{display: inline-block; color:#444444; margin-left: 32px;}
+.selectTimeInfo p span{display: inline-block; margin-left: 4px; color: #000000; font-size: 18px; font-family: RobotoM, sans-serif;}
+.selectTimeW{position: absolute; right: 0; top: 0;}
+.selectTimeW form{display: inline-block; vertical-align: middle;}
+
+.selectBoxTimeBook label{margin-right: 12px; color: #333333; font-size: 16px; font-family: NotoSansM,sans-serif;}
+.selectBoxTimeBook select{margin-right: 12px;}
+.selTime{margin-left: 36px; color: #444444; display: inline-block; vertical-align: middle}
+.selTime span{margin-left: 8px; color: #000; font-family: RobotoM, sans-serif; font-size: 18px; }
+
+.seatGraphW{margin-top: 16px; height: 670px; position: absolute; width: 100%;}
+.popupContentHeader{background: #5c5c5c; border-radius: 20px 20px 0 0;  position: relative;}
+.tab2{padding-left: 32px;}
+.tab2 > li{display: inline-block;}
+.tab2 > li > a{display: block; font-size: 16px; padding: 20px 24px; color: #b8b8b8; font-family: NotoSansM,sans-serif;}
+.tab2 > li.on > a{color: #fff; border-bottom: 3px solid #ffffff;}
+.tab2 > li > div{display: none;}
+.tab2 > li.on > div{display: block;}
+
+.seatGraphW .stickyTable{position: absolute; left: 0; top: 67px; table-layout: fixed; height: 600px; width: 100%; background: #f6f6f6;}
+.seatGraphW .stickyTable table{width: auto; white-space: nowrap;}
+.seatGraphW .stickyTable thead tr th{color: #262626;font-size: 13px; padding: 10px 5px; background: #e0e0e0 !important; text-align: left; outline: none;}
+.seatGraphW .stickyTable thead tr th:first-of-type{padding: 0 60px;}
+.seatGraphW .stickyTable tbody tr th{outline: none; vertical-align: middle;}
+.seatGraphW .stickyTable tbody tr td{padding: 17px 8px;}
+.seatGraphW .stickyTable tbody tr td:nth-of-type(2n){background: #fff;}
+.seatGraphW .stickyTable tbody tr td a{display: inline-block; vertical-align: middle; text-indent: -9999px; width: 18px; height: 18px; border-radius: 3px; box-sizing: border-box;}
+@media screen and (max-width:1200px){
+    .graphInfo{display: block; margin-bottom: 40px;}
+    .graphInfo .legend{margin-top: 20px; text-align: left;}
+    .viewTab{display: block;}
+    .selectTimeInfo p{margin-left: 16px;}
+}
+@media screen and (max-width:900px){
+    .graphInfo .totalStatus ul li{margin-right: 12px;}
+    .tab2{padding-left: 24px;}
+    .tab2 > li > a{padding: 20px 12px;}
+
+    .seatGraphW{margin-top: 70px;}
+    .selectTimeInfo{left: 0; top: 55px; right: inherit;}
+}
+@media screen and (max-width:500px){
+    .viewTab .tab1 > li{margin-left: 0;}
+    .viewTab .tab1 > li > a{min-width: 120px;}
+    .selectTimeInfo p{margin-top: 0; margin-left: 0;}
+    .selectTimeInfo p:first-of-type{margin-right: 12px;}
+}
+/* 좌석 그래프 보기 */
+
+/* 배치도 보기 */
+.seatImageW{position: absolute; left: 0; width: 100%; background: #fff; border-radius: 20px; padding: 50px 0 0 28px; box-sizing: border-box; margin-top: 16px;}
+.seatImageTable{height: 520px; overflow: auto;}
+.seatImageTable table{width: auto;}
+.seatImageTable tr td {vertical-align: middle;}
+.seatImageTable tr td .empty{width: 50px; height: 50px; display: block;}
+.seatImageTable tr td a{margin: 2px; display: block; width: 50px; height: 50px; line-height: 50px; border-radius: 10px; text-align: center; position: relative; z-index: 1;}
+.seatImageTable tr td a:hover {z-index: 2;}
+.seatImageTable tr td a .num{color: #313131; font-size: 12px; font-family: Roboto,sans-serif; line-height: 50px;}
+.seatImageTable tr td a .time{position: absolute; background: #ddf5ff; height: 20px; line-height: 20px; border: 1px solid #c6def8; left: 50%; top: 55px; transform: translateX(-50%); color: #444444;font-size: 12px; font-family: RobotoM,sans-serif; z-index: 2; border-radius: 3px; box-sizing: border-box;padding: 0 7px; display: block; opacity: 0; visibility: hidden;}
+.seatImageTable tr td a .time::after{display: block; content: ''; width: 14px; height: 10px; background: url(../../../../image/ko/ico/timeArrow.png) no-repeat center top; position: absolute; top: -10px; left: 50%; transform: translateX(-50%);}
+.seatImageTable tr td a:hover .time{top: 45px; transition: 0.3s; visibility: visible; opacity: 1;}
+.imgViewerBtn{position: absolute; right: 60px; bottom: 60px; display: inline-block; border-radius: 25px; color: #fff !important; text-align: center; background: #3c3c3c; height: 40px; line-height: 40px; padding: 0 28px;}
+@media screen and (max-width:900px){
+    .viewTab .tab1{height: 770px;}
+    .selectTimeW{left: 8px; right: inherit; top: 50px; display: block;}
+    .seatImageW{margin-top: 90px;}
+    .selTime{margin-left: 0; margin-top: 0px;}
+}
+/* 배치도 보기 */
+
+/* 입력예시 */
+.exInputBox{margin-bottom: 12px; border: 1px solid #dddddd; border-radius: 3px; padding: 24px 20px; font-size: 16px; line-height: 24px;}
+.spacing{display: inline-block; width: 11px; height: 11px; border: 1px solid #ed1c24; box-sizing: border-box; margin: 0 2px; text-indent: -9999px; vertical-align: middle;}
+.exInputCaution{color:#333333;}
+/* 입력예시 */
+
+
+/* legend */
+.legendW ul{display: none;}
+.legendW ul.on{display: block;}
+.legendW .legend{text-align: center;margin-bottom: 12px;}
+.legend{text-align: center;margin-bottom: 12px;}
+.legendW .legend li{display: inline-block;}
+.legend li{display: inline-block;}
+.legendW .legend li:not(:last-of-type){margin-right: 12px;}
+.legend li:not(:last-of-type){margin-right: 12px;}
+.legendW .legend span{display: inline-block; text-align: left; position: relative; color: #444444; font-size: 14px;vertical-align: middle;}
+.legendOption1 a{background: url(../../../../image/ko/ico/legend0.png) no-repeat left center; background-size: cover;}
+td .legendOption1{background: url(../../../../image/ko/ico/legend0.png) no-repeat left center; background-size: 18px;}
+
+
+.legendOption2 a, td .legendOption2 {border: 1px solid #aeaeae; background: #dedede;}
+.legendOption3 a, td .legendOption3 {background: url(../../../../image/ko/ico/legend05.png) no-repeat center;}
+.legendOption4 a, td .legendOption4 {background: url(../../../../image/ko/ico/legend06.png) no-repeat center;}
+.legendOption5 a, td .legendOption5 {background: url(../../../../image/ko/ico/legend07.png) no-repeat center;}
+.legendOption6 a, td .legendOption6 {background: url(../../../../image/ko/ico/legend08.png) no-repeat center;}
+
+/* 이미지 접근성 */
+.legend .legendOption1 span.icon {display:inline-block;width:20px;height:20px;background: url(../../../../image/ko/ico/legend0.png) no-repeat left center;  background-size: cover;text-indent: -9999px;}
+.legend .legendOption2 span.icon {display:inline-block;width:20px;height:20px;border: 1px solid #aeaeae; background: #dedede;text-indent: -9999px;border-radius: 3px;}
+.legend .legendOption3 span.icon {display:inline-block;width:20px;height:20px;background: url(../../../../image/ko/ico/legend05.png) no-repeat center;text-indent: -9999px;}
+.legend .legendOption4 span.icon {display:inline-block;width:20px;height:20px;background: url(../../../../image/ko/ico/legend06.png) no-repeat center;text-indent: -9999px;}
+.legend .legendOption5 span.icon {display:inline-block;width:20px;height:20px;background: url(../../../../image/ko/ico/legend07.png) no-repeat center;text-indent: -9999px;}
+.legend .legendOption6 span.icon {display:inline-block;width:20px;height:20px;background: url(../../../../image/ko/ico/legend08.png) no-repeat center;text-indent: -9999px;}
+
+.legend2 .icon {text-indent: -9999px;vertical-align:-2px}
+.legend2 .legendImage1 .icon  {display:inline-block;width:20px;height:20px;background: url(../../../../image/ko/ico/legend01.png) no-repeat left center; background-size: cover;}
+.legend2 .legendImage2 .icon  {display:inline-block;width:20px;height:20px;background:#4d2bf4;border-radius: 3px;}
+.legend2 .legendImage3 .icon  {display:inline-block;width:20px;height:20px;background: url(../../../../image/ko/ico/legend02.png) no-repeat left center; background-size: cover;image-rendering: -webkit-optimize-contrast;}
+.legend2 .legendImage4 .icon  {display:inline-block;width:20px;height:20px;background: url(../../../../image/ko/ico/legend09.png) no-repeat center center;}
+.legend2 .legendImage5 .icon  {display:inline-block;width:20px;height:20px;background: url(../../../../image/ko/ico/legend10.png) no-repeat center center;}
+.legend2 .legendImage6 .icon  {display:inline-block;width:20px;height:20px;background: url(../../../../image/ko/ico/legend03.png);background-size:cover;image-rendering: -webkit-optimize-contrast}
+.legend2 .legendImage7 .icon  {display:inline-block;width:20px;height:20px;background: url(../../../../image/ko/ico/legend04.png);background-size:cover;image-rendering: -webkit-optimize-contrast}
+
+
+/* table setting */
+.seatImageTable .legendImage1 .bg {display:inline-block;position:absolute;top:0;left:0;width:50px;height:50px;background: url(../../../../image/ko/ico/legend01.png) no-repeat;text-indent: -9999px;z-index: -1;}
+.seatImageTable .available .bg {display:inline-block;position:absolute;top:0;left:0;width:50px;height:50px;background:#4d2bf4;border-radius: 10px;text-indent: -9999px;z-index: -1;}
+.seatImageTable .available .num {color:#fff}
+
+.seatImageTable .use .bg {display:inline-block;position:absolute;top:0;left:0;width:50px;height:50px;background: url(../../../../image/ko/ico/legend02.png) no-repeat;text-indent: -9999px;z-index: -1;}
+.seatImageTable .use .num {color:#fff}
+
+.seatImageTable .reserved .bg {display:inline-block;position:absolute;top:0;left:0;width:50px;height:50px;background: url(../../../../image/ko/ico/legend03.png) no-repeat;text-indent: -9999px;z-index: -1;}
+.seatImageTable .reserved .num {color:#fff}
+
+.seatImageTable .inspect .bg {display:inline-block;position:absolute;top:0;left:0;width:50px;height:50px;background: url(../../../../image/ko/ico/legend04.png) no-repeat;text-indent: -9999px;z-index: -1;}
+
+/* caseInfo */
+.caseInfo {position:absolute;bottom:2px;left:0;width:100%;height:16px;text-align:center}
+.caseInfo .peaky {display:inline-block;width:16px;height:16px;background:url(../../../../image/ko/ico/legend09.png) no-repeat center center;text-indent: -9999px;}
+.caseInfo .labtop {display:inline-block;width:16px;height:16px;background:url(../../../../image/ko/ico/legend10.png) no-repeat center center;text-indent: -9999px;}
+
+.available .caseInfo .peaky {display:inline-block;width:16px;height:16px;background:url(../../../../image/ko/ico/legend09_1.png) no-repeat center center;text-indent: -9999px;}
+.available .caseInfo .labtop {display:inline-block;width:16px;height:16px;background:url(../../../../image/ko/ico/legend10_1.png) no-repeat center center;text-indent: -9999px;}
+.reserved .caseInfo .peaky {display:inline-block;width:16px;height:16px;background:url(../../../../image/ko/ico/legend09_1.png) no-repeat center center;text-indent: -9999px;}
+.reserved .caseInfo .labtop {display:inline-block;width:16px;height:16px;background:url(../../../../image/ko/ico/legend10_1.png) no-repeat center center;text-indent: -9999px;}
+
+@media screen and (max-width:800px){
+    .legendW .legend li{width: 30%; margin-top: 4px;}
+    .legendW .legend li:not(:last-of-type){margin-right: 4px;}
+}
+@media screen and (max-width:500px){
+    .legendW .legend li{width: 40%; margin-top: 4px;}
+    .legendW .legend li:not(:last-of-type){margin-right: 4px;}
+}
+/* legend */
+
+/* seatTable */
+.seatTable table {margin-top:16px;table-layout: fixed;width:100%;border-collapse: collapse;}
+.seatTable table tbody tr {border:1px solid #ddd}
+.seatTable table td {padding:16px 12px 20px 12px}
+.seatTable table td.seatItem1 {width:80px;padding:16px 24px 20px 24px}
+.seatTable table td.seatItem2 {width:18%}
+.seatTable table td.seatItem3 {width:15%}
+.seatTable table td.seatItem4 {width:25%}
+.seatTable table td.seatItem5 {width:245px}
+.seatTable table td.seatItem6 {width:9%}
+
+.seatTable span{color: #555;}
+.seatTable .type{display: inline-block; color: #fff; font-size: 14px; padding: 0 14px; height: 30px; line-height: 30px; min-width: 75px; text-align: center; background: #4d2bf4;border-radius: 20px; box-sizing: border-box;}
+.seatTable .full .type{background-color: #959595;}
+.seatTable .disable .type{background-color: #e50b34;}
+.seatTable .location strong{margin-right: 12px; color: #3b3b3b; font-size: 18px; font-family: RobotoB, NotoSansM, sans-serif;}
+.seatTable .percent{min-width: 120px; display: inline-block;}
+.seatTable .percent strong{color: #3b3b3b; font-size: 28px; font-family: RobotoB,sans-serif; margin: 0 4px;}
+.seatTable .useTime .time{color: #333; margin: 0 0 0 4px;font-size:15px}
+.seatTable .seatState{display: inline-block; min-width: 75px; vertical-align: middle;}
+.seatTable .seatState li{display: inline-block; width: 32px; height: 32px; text-indent: -9999px; border-radius: 50%; margin-left: 8px;}
+.seatTable .seatState li:first-of-type{margin-left: 0;}
+.seatTable .seatState li.laptopSeat{background: #5a5a5a url(../../../../image/ko/ico/seatResIcon1.png) no-repeat center;}
+.seatTable .seatState li.disabledSeat{background: #5a5a5a url(../../../../image/ko/ico/seatResIcon2.png) no-repeat center;}
+.progressBar {width:50px}
+
+.seatTable .mobileTable > tbody > tr > td.footable-cell-detail {padding-bottom:20px}
+.seatTable .footable-row-detail-inner > div > strong {min-width:70px}
+.seatTable .mobileTable.breakpoint > tbody > tr > td.expand {text-align:left}
+.seatTable .footable-row-detail-inner > div{margin:12px 10px 0px;text-align: left;}
+.seatTable .footable-row-detail-inner > div > strong{margin-bottom:2px; font-family:NotoSansM; color: #020202;}
+@media screen and (max-width:1024px) {
+    .seatTable table td.seatItem1 {width:90px;text-align: center;padding:12px;}
+    .seatTable table td.seatItem2 {width:auto;}
+    .seatTable table td.seatItem4 {width:30%}
+    .mobileTable.breakpoint > tbody > tr > td.footable-last-column {
+        padding:14px 23px 14px 10px;
+        background:url(../../../../image/ko/ico/tableOn.png) no-repeat 95% 50%;
+    }
+    .mobileTable.breakpoint > tbody > tr.footable-row-detail > td.footable-last-column {background:none}
+    .mobileTable.breakpoint > tbody > tr.footable-detail-show > td.footable-last-column {
+        background:url(../../../../image/ko/ico/tableOff.png) no-repeat 95% 50%;
+    }
+}
+
+
+/* noList 추가 */
+.resList.noData .listInfo {display:none}
+.resList .noList {border:1px solid #e3e3e3;border-radius:20px}
+.resList .noList p {margin:90px 0;padding-top:120px;background:url(../../../../image/ko/ico/noResult2.png) no-repeat center top;color:#353535;font-size:30px;letter-spacing: -0.05em;text-align: center;}
+
+

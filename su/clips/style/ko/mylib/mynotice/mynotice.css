@@ -1,0 +1,185 @@
+@charset "utf-8";
+
+/* 독서취향 */
+.myrecom{width: 95%; margin: 0 auto;}
+.myrecom::after{display: block; content: ''; clear: both;}
+.myrecom .title{color: #333; font-size: 20px; margin-left: 15px; font-family:NotoSansM, sans-serif;}
+.myrecom .title span{color: #333; font-size: 20px; font-family:NotoSansM, sans-serif;}
+.recomBooks {margin-bottom: 72px;}
+.newBook1{width: 46%; float: left;}
+.newBook2{width: 46%; float: right;}
+
+.bookDataW{position:relative;padding-top: 24px;}
+.bookDataW .recomBookData div{height: auto;}
+.bookDataW .recomBookData div a{display: block; margin: 0 auto; width: 164px; height: 224px;}
+.bookDataW .recomBookData div a .bookCover{display: block; width: 100%; height: 164px; margin-bottom: 16px; padding-top: 15px; box-sizing: border-box; background: #f3f3f3; border-radius: 20px; border: 1px solid #e3e3e3; }
+.bookDataW .recomBookData div a img{display: block; width: 91px; margin: 0 auto; height: auto; max-height: 131px; box-shadow: 3px 4px 10px 0px rgba(0, 0, 0, 0.33)}
+.bookDataW .recomBookData div a .bookTitle{display: block; color: #333; max-height: 46px; width: calc(100% - 8px); margin: 0 auto;}
+.bookDataW .recomBookData div .callNo{width: 160px; margin: 0 auto; font-size: 14px; color: #333333; font-family:Roboto, sans-serif; letter-spacing: 0;}
+.bookDataW .recomBookData .slick-arrow{position: absolute; top: 28%; border: none;  width: 24px; height: 46px; text-indent: -9999px; cursor: pointer;}
+.bookDataW .recomBookData .slick-arrow.slickPrev{left: -2.5%; background: url(../../../../image/ko/btn/prevBook2.png) no-repeat center;}
+.bookDataW .recomBookData .slick-arrow.slickNext{right: -2.5%; background: url(../../../../image/ko/btn/nextBook2.png) no-repeat center;}
+.newBook .bookDataW .recomBookData .slick-arrow.slickPrev{left: -5.5%;}
+.newBook .bookDataW .recomBookData .slick-arrow.slickNext{right: -5.5%;}
+@media screen and (max-width:1024px){
+    .recomBooks {margin-bottom: 60px;}
+    .newBook1{margin-bottom: 60px;}
+    .bookDataW .recomBookData .slick-arrow.slickPrev{left: -20px; background: url(../../../../image/ko/btn/prevBook2.png) no-repeat center;}
+    .bookDataW .recomBookData .slick-arrow.slickNext{right: -20px;}
+    .newBook .bookDataW .recomBookData .slick-arrow.slickPrev{left: -20px;}
+    .newBook .bookDataW .recomBookData .slick-arrow.slickNext{right: -20px;}
+    .newBook1{width: 100%; float: none;}
+    .newBook2{width: 100%; float: none;}
+}
+@media screen and (max-width:767px){
+    .bookDataW{padding-top: 12px;}
+    .myrecom .title{margin-left: 5px; font-size: 18px;}
+    .myrecom .title span{font-size: 18px;}
+    .bookDataW .recomBookData .slick-arrow.slickPrev{left: -14px;}
+    .bookDataW .recomBookData .slick-arrow.slickNext{right: -14px;}
+    .newBook .bookDataW .recomBookData .slick-arrow.slickPrev{left: -14px;}
+    .newBook .bookDataW .recomBookData .slick-arrow.slickNext{right: -14px;}
+}
+/* 독서취향 */
+
+/* 독서통계 */
+.stats{border: 1px solid #e3e3e3; border-radius: 10px;}
+
+.loanInfo{width: 62%; height: 230px; margin-right: 24px; margin-bottom: 24px; float: left; padding: 28px 20px 28px 35px; background: #f3f3f3; box-sizing: border-box;}
+.loanInfo > div{display: -webkit-box; display: -ms-flexbox; display: flex;-webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between;}
+.loanInfo > div:first-of-type{margin-bottom: 12px;}
+.loanInfo .statsTxt {width: 180px; color: #555555; font-size: 26px;} 
+.loanInfo .statsTxt .userId{color: #282828; font-size: 26px; font-family:NotoSansB;}
+.loanInfo .selectBoxWrap .selectW select{color: #555555; border: none; border-radius: 25px; padding: 9px 15px 9px 25px; width: 110px; background: #fff url(../../../../image/ko/ico/selectArrow2.png) no-repeat right 15px top 55%;}
+.loanInfo .selectBoxWrap .selectW{display: inline-block; margin-right: 8px;}
+.loanInfo .selectBoxWrap .selectBox .selectBtn{min-width: 64px; height: 40px;}
+
+.loanInfo .percent > span{display: block; margin-top: 8px; padding:0px 28px; line-height: 32px; height: 32px; background: #fff; box-sizing: border-box; border-radius: 25px;}
+.loanInfo .percent span{color: #555;}
+.loanInfo .loanStats{margin-right: 40px;}
+.loanInfo .loanStats ul::after{display: block; content: ''; clear: both;}
+.loanInfo .loanStats ul li{float: left;}
+.loanInfo .loanStats ul li:not(:first-of-type){padding-left: 25px;}
+.loanInfo .loanStats ul li:not(:last-of-type){padding-right: 25px; position: relative;}
+.loanInfo .loanStats ul li:not(:last-of-type)::after{display: block; content: ''; position: absolute; right: 0; bottom: 0; width: 1px; height: 32px; background: #dedede;}
+.loanInfo .loanStats ul li > span{display: block;}
+.loanInfo .loanStats ul li span{color: #555555; text-align: center;}
+.loanInfo .loanStats ul li .num{display: block; margin-top: 20px; color: #3c3c3c; font-size: 20px;}
+.loanInfo .loanStats ul li .count{color: #3c3c3c; font-size: 33px; font-family:RobotoM, sans-serif;}
+
+.monthLoanGraph{float: right; width: calc(38% - 24px); height: 230px; padding: 18px; margin-bottom: 24px; box-sizing: border-box;}
+
+.myLoanBook{clear: both; padding: 28px; margin-bottom: 32px;}
+.myLoanBook .title{color: #333; font-family:NotoSansM, sans-serif; font-size: 20px; margin-left: 18px;}
+.myLoanBook .bookDataW{margin: 0 32px;}
+.myLoanBook .slickCounter{width: 120px; margin: 12px auto 0; text-align: center;box-sizing: border-box; height: 40px; line-height: 40px; padding: 0 36px;color: #fff; background: #4a4948; border-radius: 25px;}
+.myLoanBook .slickCounter span{font-size: 14px;}
+.myLoanBook .slickCounter .current{font-family:RobotoB, sans-serif;}
+
+.statsW .stats{height: 380px; box-sizing: border-box; padding: 8px 20px; text-align: center;}
+.statsW .title{color: #333; font-family:NotoSansM, sans-serif; font-size: 20px; margin-bottom: 12px; margin-left: 8px;}
+
+.stats1{float: left; width: calc(50% - 12px); margin-bottom: 40px;}
+.stats2{float: right; width: calc(50% - 12px); margin-bottom: 40px;}
+.stats3{clear: both;}
+/* 삭제 */
+@media screen and (max-width:1280px){
+    .statistics img{width: 100%; height: 100%; margin: 0 auto; display: block;}
+}
+
+@media screen and (max-width:1080px){
+    .loanInfo{width: 100%; margin-right: 0; float: none;}
+    .myLoanBook{margin-bottom: 18px;}
+    .myLoanBook .bookDataW{margin: 0 8px;}
+    .monthLoanGraph{float: none; width: 100%;}
+    .stats1{float: none; width: 100%; margin-bottom: 18px;}
+    .stats2{float: none; width: 100%; margin-bottom: 18px;}
+/* 삭제 */
+    .statistics img{width: auto;}
+}
+
+@media screen and (max-width:767px){
+    .loanInfo{padding: 16px; height: auto;}
+    .loanInfo > div:nth-of-type(2){display: block; text-align: center;}
+    .loanInfo > div:first-of-type{margin-bottom: 20px;}
+    .loanInfo .statsTxt{font-size: 22px; width: auto; margin-bottom: 12px;}
+    .loanInfo .statsTxt br{display: none;}
+    .loanInfo .statsTxt .userId{font-size: 22px;}
+    .loanInfo .percent > span{display: inline-block; margin-right: 4px; margin-top: 0; margin-bottom: 12px; padding: 0 24px;}
+    .loanInfo .loanStats{margin-right: 0; display: inline-block;}
+    .loanInfo .loanStats ul li .num{margin-top: 12px;}
+    .loanInfo .loanStats ul li .count{font-size: 28px;}
+    .loanInfo .loanStats ul li:not(:last-of-type){padding-right: 16px;}
+    .loanInfo .loanStats ul li:not(:first-of-type){padding-left: 16px;}
+    
+    .myLoanBook{clear: both; padding: 24px 20px}
+    .myLoanBook .title{margin-left: 0;}
+
+    /* 삭제 */
+    .statistics img{width: 100%;}
+}
+
+@media screen and (max-width:550px){
+    .loanInfo > div{display: block;}
+    .loanInfo .loanStats ul li:not(:last-of-type){padding-right: 7px;}
+    .loanInfo .loanStats ul li:not(:first-of-type){padding-left: 7px;}
+}
+@media screen and (max-width:380px){
+    .loanInfo .percent > span{padding: 0 12px;}
+    .loanInfo{padding: 16px 12px;}
+    .loanInfo .loanStats ul li span{font-size: 14px;}
+}
+
+/* 20220113 로딩추가 , 추천자료 없음*/
+.noRecom {display:flex;align-items: center;justify-content: center;height:265px}
+.noRecom .noResult1 {padding-top: 90px; margin-bottom: 40px; background: url(../../../../image/ko/ico/noResult.png) no-repeat top center;background-size:80px auto; color: #545454; font-size: 25px; font-family:NotoSansM, sans-serif;text-align:center;}
+.noRecom .noResult1 span {color:#006951}
+
+.loading {position: absolute;top:50%;left:50%;transform: translate(-50%, -50%);-webkit-transform: translate(-50%, -50%);width: 80px;height: 80px}
+.loading.off {display:none}
+.loading span {display:block;animation: loading 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;-webkit-animation: loading 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;-moz-animation: loading 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;transform-origin: 40px 40px;}
+.loading span:after {content:'';display: block;position: absolute;width: 7px;height: 7px;border-radius: 50%;background: #333;margin: -4px 0 0 -4px;}
+.loading span:nth-child(1) {animation-delay: -0.036s;}
+.loading span:nth-child(1):after {top: 63px;left: 63px;}
+.loading span:nth-child(2) {animation-delay: -0.072s;}
+.loading span:nth-child(2):after {top: 68px;left: 56px;}
+.loading span:nth-child(3) {animation-delay: -0.108s;}
+.loading span:nth-child(3):after {top: 71px;left: 48px;}
+.loading span:nth-child(4) {animation-delay: -0.144s;}
+.loading span:nth-child(4):after {top: 72px;left: 40px;}
+.loading span:nth-child(5) {animation-delay: -0.18s;}
+.loading span:nth-child(5):after {top: 71px;left: 32px;}
+.loading span:nth-child(6) {animation-delay: -0.216s;}
+.loading span:nth-child(6):after {top: 68px;left: 24px;}
+.loading span:nth-child(7) {animation-delay: -0.252s;}
+.loading span:nth-child(7):after {top: 63px;left: 17px;}
+.loading span:nth-child(8) {animation-delay: -0.288s;}
+.loading span:nth-child(8):after {top: 56px;left: 12px;}
+@keyframes loading {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+}
+@-webkit-keyframes loading {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+}
+@-moz-keyframes loading {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+}
+
+@media screen and (max-width:767px){
+    .noRecom .noResult1 {font-size:18px}
+}
