@@ -1,0 +1,51 @@
+﻿.mobileTable.breakpoint > tbody > tr > td.expand {
+	padding:12px 33px 12px 12px;
+	background:url(../../../../image/ko/ico/tableDownBtnBg.png) no-repeat 95% 50%;
+}
+.mobileTable.breakpoint > tbody > tr.footable-detail-show > td.expand {
+	background:url(../../../../image/ko/ico/tableUpBtnBg.png) no-repeat 95% 50%;
+}
+
+
+.mobileTable.breakpoint > tbody > tr > td.tableTit.expand {
+	padding:12px 23px 12px 12px;
+	background:url(../../../../image/ko/ico/tableDownBtnBg.png) no-repeat 97% 50%;
+}
+.mobileTable.breakpoint > tbody > tr.footable-detail-show > td.tableTit.expand {
+	background:url(../../../../image/ko/ico/tableUpBtnBg.png) no-repeat 97% 50%;
+}
+
+
+#listTable .footable-last-column{
+	padding-right:30px
+}
+.mobileTable.breakpoint > tbody > tr:hover:not(.footable-row-detail) {
+	cursor: pointer;
+}
+.mobileTable > tbody > tr > td.footable-cell-detail{
+	border-top:none;
+	border-left: none;
+}
+.mobileTable > thead{
+	display:none
+}
+.mobileTable > thead > tr > th.footable-first-column, .footable > thead > tr > td.footable-first-column,
+.mobileTable > tbody > tr > td.footable-first-column {
+	border-left: none;
+}
+.mobileTable > tbody img {
+	vertical-align:middle;
+}
+.mobileTable > tbody img.star{
+	width:75px;
+	height:14px
+}
+.mobileTable > tbody img.cover{
+	width:70px;
+	height:97px
+}
+
+.footable-row-detail-inner > div > strong{display:inline-block;margin-right:10px;}
+.footable-row-detail-inner > div:first-child {
+	margin-top:0;
+}
