@@ -185,7 +185,7 @@ option{font-family: Pretendard,sans-serif}
 @media screen and (min-width:1025px){
     .wholeMenu{width: 100%;height: calc(100% - 143px);overflow-y: auto;position: fixed;top: 143px;left: 0;z-index: 200; opacity:0;visibility:hidden;transition: .3s;background: #f3f3f4;}
     .wholeMenu.on{visibility:visible; opacity:1}
-    .wholeMenu.fixed{top: 0;}
+    .wholeMenu.fixed{top: 0;height:100%}
     .mobileWholeMenuTop p{display: none;}
     .mobileWholeMenuTop a{position: absolute;top: 45px;right: 20px;display: block;width: 48px;height: 48px;border: 1px solid #555;text-indent: -9999px;}
     .mobileWholeMenuTop a span{position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%) rotate(45deg);height: 25px;width: 2px;background: #555;display: block;}
