@@ -306,7 +306,6 @@ input[type="text"]:-moz-placeholder{color:#555;}
 .btnBunchType1.one>span{width:50%}
 .btnBunchType1>span:first-child{margin-left:0}
 .btnBunchType1>span:last-child{margin-right:0}
-
 @media screen and (max-width:767px){
     .btnBunchType1.many{-webkit-box-lines: multiple;-ms-flex-wrap: wrap;flex-wrap: wrap}
     .btnBunchType1.many>span{width:auto}
@@ -486,11 +485,18 @@ textarea.txtArea{width:100%;height:85px;border:1px solid #d4d4d4;resize:none;box
 @media screen and (max-width:767px){
     .detailSearchLayer{width:100%;}
     .advancedSearch .item{display: block;}
-    .advancedSearch .item .selectBox1.selectSearchItem{display: block; width: 100%;}
+    .advancedSearch .item .selectBox1.selectSearchItem{display: block; width: 100% !important;}
     .advancedSearch .inputSearchKeyword, .advancedSearch .item .selectBoolean{display: inline-block;}
     .advancedSearch .item .selectBoolean{min-width:0 !important;width:calc(35% - 8px) !important}
     .advancedSearch .inputSearchKeyword{width: 65%; margin-left: 0; margin-right: 4px;}
     .advancedSearch .searchLimit .datePicker{width:calc(50% - 9px)}
+}
+@media screen and (max-width:480px){
+    .detailSearchLayer .btnBunchType1{max-width: 380px;margin:0 auto}
+}
+@media screen and (max-width:452px){
+    .advancedSearchW .btnBunchType1{max-width: 380px;margin:0 auto}
+    
 }
 
 /* swiper */
