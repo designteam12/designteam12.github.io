@@ -49,7 +49,7 @@ option{font-family: Pretendard,sans-serif}
 
 /* header1 */
 .header1{border-bottom:1px solid #f5f5f5}
-.header1>div{height: 48px; display: -webkit-box; display: -ms-flexbox; display: flex;-webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between;-webkit-box-align: center; -ms-flex-align: center; align-items: center;width:1400px;margin:0 auto}
+.header1>div{height: 44px; display: -webkit-box; display: -ms-flexbox; display: flex;-webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between;-webkit-box-align: center; -ms-flex-align: center; align-items: center;width:1400px;margin:0 auto}
 .header1>div .welcome{font-size:16px;color:#696969}
 .header1>div .welcome>span{font-size:16px;color:#000}
 .header1 .globalMenu{margin-left:auto}
@@ -59,7 +59,7 @@ option{font-family: Pretendard,sans-serif}
 .header1 .globalMenu > ul > li a{color: #555;}
 .header1 .globalMenu > ul > li{display: inline-block;}
 .header1 .globalMenu > ul > li.login > a{color: #0d0c22;}
-.header1 .globalMenu > ul > li.profile .myMenuBtn{position:relative;color: #fff !important;padding: 8px 20px; display: block; background: #080808; border-radius: 30px;font-size:16px;font-family: Pretendard,sans-serif;}
+.header1 .globalMenu > ul > li.profile .myMenuBtn{position:relative;color: #fff !important;padding: 5px 20px; display: block; background: #080808; border-radius: 30px;font-size:16px;font-family: Pretendard,sans-serif;}
 .header1 .globalMenu > ul > li.profile .totalCnt{position:absolute;top:0;right:-6px;display:block;width:18px;height:18px;background:#ff0d46;color:#fff;border-radius: 100%;text-align: center;line-height: 18px;font-size:12px} 
 .header1 .globalMenu > ul > li.profile .myMenuBtn .newMyMenu{position:absolute;top:-6px;right:-6px;width:17px;height:17px;border-radius: 100%;line-height: 17px;background:#d10046;color:#fff;font-size:11px;font-family:Roboto,sans-serif;text-align: center;text-indent: 0;}
 .header1 .globalMenu > ul > li.language{position:relative}
@@ -134,7 +134,7 @@ option{font-family: Pretendard,sans-serif}
 /* 요약정보 */
 
 /* .header2 */
-.header2{height: 94px; position: relative; box-sizing: border-box;}
+.header2{height: 72px;position: relative;box-sizing: border-box;}
 .header2 > div{width:1400px;height: 100%;margin:0 auto}
 .header2 .mobileLoginInfo{display: none; font-size: 16px; color: #fff;}
 .header2 .mobileLoginInfo span{font-size: 16px;}
@@ -249,7 +249,8 @@ option{font-family: Pretendard,sans-serif}
 /* divContentsW */
 #divContentsW{overflow: hidden;}
 #divContents{position: relative;}
-#divContent{min-height:550px;width:1400px;margin:30px auto 0 auto;padding-bottom:120px}
+#divContent{min-height:550px;width:1400px;margin: 15px auto 0 auto;padding-bottom:120px}
+#divContent.upCHide{margin-top:0 !important}
 #divContent.ask{padding-bottom:0 !important}
 .subCommon{padding: 20px 0 16px 0;background: #f3f3f4}
 .subCommon>div{display: -webkit-box; display: -ms-flexbox; display: flex;-webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between;-webkit-box-align: center; -ms-flex-align: center; align-items: center;width:1400px;margin:0 auto}
