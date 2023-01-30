@@ -2,16 +2,16 @@
 
 #divSearch{position:relative;top:-60px;margin-bottom:-60px}
 #divSearch form{width:790px;margin:0 auto;}
-#divSearch .searchSelect{margin:0 0 16px 8px}
+#divSearch .searchSelect{margin:0 0 12px 8px}
 #divSearch .searchSelect ul{font-size:0}
 #divSearch .searchSelect ul>li{display:inline-block}
 #divSearch .searchSelect ul>li:not(:last-child){margin-right:20px}
 #divSearch .searchInputArea{position:relative;padding-right:10px;border:none; box-sizing:border-box; background:#fff;box-shadow:0px 3px 18px 0px rgba(0, 0, 0, 0.08);border-radius:20px;}
-#divSearch .searchInputArea select{height:80px;width:160px;box-sizing:border-box;padding:0 36px 0 40px;color:#0d0c22;background:url(../../../image/ko/ico/searchSelArrow.png) no-repeat right 25px center;font-family:PretendardM,sans-serif;font-size:20px;border:none}
+#divSearch .searchInputArea select{height:68px;width:160px;box-sizing:border-box;padding:0 36px 0 40px;color:#0d0c22;background:url(../../../image/ko/ico/searchSelArrow.png) no-repeat right 25px center;font-family:PretendardM,sans-serif;font-size:20px;border:none}
 #divSearch .inputArea{display:inline-block;position:relative;width:calc(100% - 328px);}
 #divSearch .inputArea::before{content:"";display:block;position:absolute;top:30px;left:0;width:1px;height:20px;background:#e7e7e9;}
-#divSearch .inputArea::after{content:"";display:block;position:absolute;top:30px;right:0;width:1px;height:20px;background:#e7e7e9;}
-#divSearch .searchInputArea .inputArea  input[type="text"]{width:100%;height:78px;padding:0 160px 0 16px; border:none;color:#0d0c22;font-size:20px;font-family:PretendardM,sans-serif;box-sizing:border-box;}
+#divSearch .inputArea::after{content:"";display:block;position:absolute;top:24px;right:0;width:1px;height:20px;background:#e7e7e9;}
+#divSearch .searchInputArea .inputArea  input[type="text"]{width:100%;height:66px;padding:0 160px 0 16px; border:none;color:#0d0c22;font-size:20px;font-family:PretendardM,sans-serif;box-sizing:border-box;}
 #divSearch .inputArea .textDel{position:absolute;top:0;right:24px;width:20px;height:80px;background:url(../../../image/ko/ico/textDel.png) no-repeat center;text-indent:-9999px;}
 #divSearch .searchInputArea .inputArea  input[type="text"]{color:#0d0c22;font-size:20px;font-family:PretendardM,sans-serif;}
 #divSearch form input[type="image"]{width:30px;height:30px;margin-left:20px;vertical-align:middle;}
@@ -29,7 +29,7 @@
 #divSearch .searchInput .dataSearchBtn{position:absolute; right:14px; top:8px; width:23px; height:23px;}
 #divSearch .languageBtn{display:block;position:absolute;top:50%;right:14px;transform:translateY(-50%);width:20px;height:12px;background:url(../../../image/ko/ico/languageBtn.png) no-repeat;text-indent:-9999px;}
 
-.relativeKeyword{width:940px;margin:34px auto 0 auto}
+.relativeKeyword{width:940px;margin:16px auto 0 auto}
 .relativeKeyword::after{content:"";display:block;clear:both;}
 .relativeKeyword .tit{float:left;width:128px;height:44px;background:#f3f3f4;color:#000;;line-height:44px;text-align:center;border-radius:15px;}
 .relativeKeyword>ul{padding-top:10px;margin-left:155px;font-size:0}
@@ -139,7 +139,7 @@
 .briefContent::after{display:block; content:''; clear:both;}
 
 /* searchInfo */
-.searchInfo{margin-bottom:16px;padding:0 0 12px 8px; border-bottom:2px solid #000}
+.searchInfo{margin-bottom:10px;padding: 0 0 8px 8px;border-bottom:2px solid #000}
 .searchInfo .searchKeyword{display:inline-block;margin-right:16px}
 .searchInfo .searchKeyword dt{display:inline-block; margin:0 7px 0 0; color:#666; font-size:20px;}
 .searchInfo .searchKeyword dd{display:inline-block;}
@@ -214,7 +214,7 @@
 }
 /* 검색결과 없음 */
 
-.resultList>li{margin-top:10px; padding:24px 20px 20px 20px; border:1px solid #e7e7e9; border-radius:3px; position:relative; -webkit-transition:0.4s; transition:0.4s;border-radius:15px;}
+.resultList>li{margin-top:10px;padding: 12px 20px 10px 20px;border:1px solid #e7e7e9;border-radius:3px;position:relative;-webkit-transition:0.4s;transition:0.4s;border-radius:15px;}
 .resultList>li:hover{box-shadow:2px 3px 9.4px 0.6px rgba(0, 0, 0, 0.2);}
 .resultList>li:last-of-type{margin-bottom:10px;}
 .resultList>li .listInfoW{display:-webkit-box; display:-ms-flexbox; display:flex;}
@@ -265,7 +265,7 @@
 .resultList>li .ResearchStarters a{ margin:15px 0 0 0px; display:inline-block; color:#333; padding-right:15px; background:url(../../../image/ko/ico/moreArrow2.png) no-repeat right center;}
 
 /* eachBtns */
-.eachBtns{position:absolute;top:24px;right:28px}
+.eachBtns{position:absolute;top:10px;right:28px}
 .eachBtns>ul{font-size:0}
 .eachBtns>ul>li{display:inline-block;position:relative;padding-bottom:8px}
 .eachBtns>ul>li:not(:first-child){margin-left:24px}
