@@ -200,9 +200,5 @@ $(document).ready(function(){
 		});
 	};
 	
-	// datepicker 테스트
-	$('.inputTextCal').datepicker();
-
-	
 
 });
