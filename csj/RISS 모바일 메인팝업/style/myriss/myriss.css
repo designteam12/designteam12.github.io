@@ -1,0 +1,231 @@
+@charset "utf-8";
+
+/* 내 최근본 논문 */
+.recentList>li .data {display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-pack: justify;-ms-flex-pack: justify;justify-content: space-between;-webkit-box-align: center;-ms-flex-align: center;align-items: center;margin-bottom:12px}
+.recentList>li .data>.type {color:#6b6b6b;font-size:1rem;font-family: PretendardB,sans-serif;}
+.recentList>li .data>.date {color:#000;font-size:1rem;font-family: PretendardB,sans-serif;}
+.recentList>li .thTit {display:inline-block;margin-bottom:6px;color:#000;font-family: PretendardM,sans-serif;font-size:1.214rem;line-height: 17.5px;}
+.recentList>li .thInfo {color:#828282;font-size:1rem}
+.recentList>li {padding:16px 0}
+.recentList>li:not(:last-child) {border-bottom:1px solid #e6e6e6}
+.recentList>li:first-child {padding-top:0}
+.recentList>li:last-child {padding-bottom:0}
+
+/* 내 책장 */
+.titArea .subTit1.bookIco {padding-right:30px;background:url(../../images/myriss/book.png) no-repeat right top}
+
+.shelf {position:relative;overflow: hidden;}
+.shelf.mainShelf::before {content:"";display:block;position:absolute;top:0;left:0;width:100%;height:5px;background:#00c98b;}
+.shelfTop .shelfName {display:inline-block;margin-right:6px;font-family: PretendardB,sans-serif;font-size:1.285rem;}
+.shelf .category {color:#5e5e5e;font-size: 1.071rem;}
+.favorRadio[type="radio"]:checked,.favorRadio[type="radio"]:not(:checked) {position: absolute;left: -9999px;}
+.favorRadio[type="radio"]:checked + label,.favorRadio[type="radio"]:not(:checked) + label {cursor: pointer;display:inline-block;width: 20px;height: 20px;background: url(../../images/myriss/star.png) no-repeat;vertical-align: sub;}
+.favorRadio[type="radio"]:checked + label {background:url(../../images/myriss/starOn.png) no-repeat}
+.shelfInfo {display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-pack: justify;-ms-flex-pack: justify;justify-content: space-between;-webkit-box-align: center;-ms-flex-align: center;align-items: center;}
+.shelfInfo>div {display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-pack: justify;-ms-flex-pack: justify;justify-content: center;-webkit-box-orient: vertical;-moz-flex-direction: column;-ms-flex-direction: column;flex-direction: column;-webkit-box-align: center;-ms-flex-align: center;align-items: center;width:calc(100% - 3px);height:80px;margin-top:10px;background:#f4f4f4;border-radius: 10px;}
+.shelfInfo>div:nth-of-type(1) {margin-right:3px}
+.shelfInfo>div:nth-of-type(2) {margin-left:3px}
+.shelfInfo>div .txt {color:#000;font-family: PretendardB,sans-serif;font-size:1.428rem}
+.shelfInfo>div .tit {color:#807878;font-size:1rem}
+
+.shelfBtns {margin-top:36px;text-align: center;}
+.shelfBtns .edit {background:url(../../images/commons/edit.png) no-repeat left center;padding-left:20px;color:#616161;font-size:1.071rem}
+.shelfBtns .delete {margin-left:24px;background:url(../../images/commons/delType3.png) no-repeat left center;padding-left:20px;color:#616161;font-size:1.071rem}
+
+.urlCopy {position:absolute;top:16px;right:12px;width:18px;height:16px;background:url(../../images/myriss/share.png) no-repeat}
+
+.shListFunction {margin-bottom:8px;padding:0 12px;text-align: right;}
+.shListFunction::after {content:"";display:block;clear:both}
+.shListFunction .shFunc {float:right;margin-bottom:4px}
+.shListFunction .chkFunction {margin:0 0 4px 0}
+.shListFunction .chkFunc .selType2 {padding:0 20px 0 0px;width:auto;height:auto;font-size:1rem}
+.shListFunction .shMove {background:#fff;padding:1px 8px;color:#000;border:1px solid #c1c1c1;border-radius: 5px;font-size:1.071rem;}
+.shListFunction>ul {font-size:0}
+.shListFunction>ul>li {display:inline-block;}
+.shListFunction>ul>li:not(:last-child) {margin-right:12px}
+.shListFunction>ul>li label {vertical-align: text-top;padding-left:18px}
+.shListFunction>ul>li .selType2 {padding:0 20px 0 0px;width:auto;height:auto;font-size:1rem}
+.shListFunction .optTypeW1 {float:right;margin-top:4px}
+
+.myShList>li {padding:12px 0 16px 0;border-top:1px solid #e6e6e6}
+.myShList>li>.topArea {margin-bottom:6px}
+.myShList>li>.topArea label {padding-left:18px;vertical-align: text-bottom;background-position: left center;}
+.myShList>li>.topArea .type {margin-left:8px;font-size:1rem;font-family: PretendardB,sans-serif;color:#6b6b6b;}
+.myShList>li .tit {display:inline-block;margin-bottom:4px;color:#000;font-size:1.214rem;font-family: PretendardM,sans-serif;line-height: 17px;line-height: 1.2;}
+.myShList>li .info {margin-bottom:12px}
+.myShList>li .info li {color:#828282;font-size:1rem}
+
+.myShList .memoInputW {display:none;margin-top:8px}
+.myShList .memoInputW .memoInput {width:100%;height:100px;padding:12px;border:1px solid #ddd;resize: none;border-radius: 5px;color:#6b6b6b;box-sizing: border-box;}
+.myShList .memoInputW .textTotal {display:block;text-align: right;color:#6b6b6b}
+.myShList .memoInputW .btnW {display: -webkit-box;display: -ms-flexbox;display: flex;margin-top:12px}
+.myShList .memoInputW .btnW .btnType1 {margin-left:4px;}
+.myShList .memoInputW .btnW .btnType2 {margin-right:4px;}
+.myShList>li .memoTxt {margin-top:4px;color:#6b6b6b}
+
+/* 내 추천논문 */
+.subTit1 .thumb {padding-left:25px;background:url(../../images/myriss/thumb.png) no-repeat right center}
+.recomTit1 {margin-bottom:12px;color:#000;font-family: PretendardB,sans-serif;font-size:1.214rem;}
+.recomTit2 {margin-bottom:12px;color:#000;font-family: PretendardB,sans-serif;font-size:1.285rem;}
+.recomTit1>span {color:#000;font-family: PretendardB,sans-serif;font-size:1.214rem;}
+.recomTit1.alram {display:inline-block;line-height:28px ;padding-right:36px;background:url(../../images/myriss/alram.png) no-repeat right center}
+
+.recommend .recomList>li:not(:last-child) {margin-bottom:24px}
+.recommend .recomList .txtArea {padding-bottom:10px;border-bottom:1px solid #eaeaea}
+.recommend .recomList .title {color:#000;font-family: PretendardM,sans-serif;font-size:1.214rem;}
+.recommend .recomList .title>span {color:#000;font-family: PretendardM,sans-serif;font-size:1.214rem;}
+.recommend .recomList .info {font-size:0}
+.recommend .recomList .info>li {display:inline-block;color:#999;font-size:1.071rem}
+.recommend .recomList .info>li:not(:last-child) {position:relative;padding-right:9px;margin-right:8px}
+.recommend .recomList .info>li:not(:last-child)::after {content:"";display:block;position:absolute;top:6px;right:0;width:1px;height:10px;background:#999}
+
+.recommend .recomList .btnArea {margin-top:12px}
+.recommend .recomList .btnArea::after {content:"";display:block;clear:both}
+.recommend .recomList .btnArea>div {float:left;width:50%;text-align: center;}
+.recommend .recomList .btnArea>div>a {display:inline-block;padding-left:32px;background-position:left center;background-repeat: no-repeat;color:#6b6b6b;font-size:1rem;line-height: 22px;}
+.recommend .recomList .btnArea>div>a.noInter {background-image: url(../../images/myriss/noInterest.png);}
+.recommend .recomList .btnArea>div>a.read {background-image: url(../../images/myriss/read.png);}
+
+.favorWriter, .favornsbj {font-size:0}
+.favorWriter>li, .favornsbj>li {display:inline-block;padding:9px 19px;border-radius: 20px;text-align: center;}
+.favorWriter>li:not(:last-child), .favornsbj>li:not(:last-child) {margin-right:6px}
+.favorWriter>li {margin-bottom:4px;background:#1ab079;color:#fff;}
+.favornsbj>li {background:#1aa0b0;color:#fff}
+
+.useStat .perArea {text-align: center;}
+.useStat .perArea img {width:116px;height:116px}
+.useStat .perArea .rank {margin-top:-8px;color:#000;font-family: PretendardB,sans-serif;font-size:1.214rem;}
+.useStat .perArea .rank>span {color:#000;font-family: PretendardB,sans-serif;font-size:1.214rem;}
+.useStat .perArea .rankPer {color:#7e7d7d;font-size:1rem;}
+.useStat .perArea .rankPer>span {color:#7e7d7d;font-size:1rem;}
+
+.useStat .statArea {margin-top:20px}
+.useStat .statArea>ul::after {content:"";display:block;clear:both}
+.useStat .statArea>ul>li {float:left;width:calc(50% - 3px);padding:14px 0 10px 0;margin:0 5px 5px 0;background:#f4f4f4;text-align: center;border-radius: 8px;}
+.useStat .statArea>ul>li:nth-of-type(2n) {margin-right:0}
+.useStat .statArea>ul>li .cnt {color:#000;font-family: PretendardB,sans-serif;font-size:1.285rem;}
+.useStat .statArea>ul>li .txt {margin-top:6px;color:#616161;font-size:1rem;}
+
+/* 내추천논문_월간이용현황 */
+.graphTab {margin-bottom:12px}
+.graphTab .inner {overflow: hidden;}
+.graphTab .tab {width:auto}
+.graphTab .tab:not(:last-child) {margin-right:4px}
+.graphTab .tab a {display:block;padding:8px 16px;background:#e2e3e3;color:#000;border-radius: 20px;font-family: PretendardM,sans-serif;font-size:1.071rem;}
+.graphTab .tab.on a {background:#000;color:#fff}
+.graphArea {background:#fff;padding:20px 12px 20px 12px;border-radius: 15px;box-shadow: 0 0 8px rgba(0,0,0,0.04);}
+
+.monthStat {display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-pack: justify;-ms-flex-pack: justify;justify-content: space-between;-webkit-box-align: center;-ms-flex-align: center;align-items: center;margin-bottom:12px}
+.monthStat>div {display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-pack: justify;-ms-flex-pack: justify;justify-content: center;-webkit-box-orient: vertical;-moz-flex-direction: column;-ms-flex-direction: column;flex-direction: column;-webkit-box-align: center;-ms-flex-align: center;align-items: center;width:calc(100% - 3px);height:66px;border:1px solid #ddd;border-radius: 10px;}
+.monthStat>div:nth-of-type(1) {margin-right:3px}
+.monthStat>div:nth-of-type(2) {margin-left:3px}
+.monthStat .num {color:#616161;font-size:1rem;}
+.monthStat .num .cnt {color:#ff1d06;font-size:1.285rem;font-family: PretendardB,sans-serif;}
+.monthStat .txt {color:#616161;font-size:1rem}
+.monthGraph {height:210px;border-radius: 10px;}
+/* 내추천논문_월간이용현황 */
+
+.alramTxt {margin-bottom:32px}
+.alramTxt p {color:#6f6f6f;font-size:1.071rem;line-height: 22px;}
+.alramTxt p strong {font-size:1.071rem;color:#000;display:block}
+.alramBtns {display:flex}
+.alramBtns a:nth-of-type(1) {margin-right:4px}
+.alramBtns a:nth-of-type(2) {margin-left:4px}
+
+.interKeyword .explain {margin-bottom:12px;color:#6f6f6f;font-size:1rem;line-height: 20px;}
+.interKeyword .explain strong {display:block;font-size:1rem;color:#000}
+.interKeyword .searchFormW1 {border:1px solid #acacac;margin-bottom:12px}
+.interKeyword .searchForm1Btn {right:16px}
+
+.interKeyList>ul>li {padding-top:12px;border:1px solid #ddd;background:#f9f9f9;border-radius: 10px;}
+.interKeyList>ul>li:not(:last-child) {margin-bottom:12px}
+.interKeyList .topArea {padding:0 16px 0 12px;margin-bottom:12px}
+.interKeyList .topArea::after {content:"";display:block;clear:both}
+.interKeyList .topArea .keyword {float:left;padding-left:26px;background:url(../../images/commons/bullet1.png) no-repeat left top 6px;color:#000;font-size:1.285rem;font-family: PretendardB,sans-serif;}
+.interKeyList .topArea .endDate {float:right;color:#737373;font-size:1rem}
+.interKeyList .viewListBtns {padding:0 16px 0 12px;margin-bottom:12px}
+.interKeyList .viewListBtns::after {content:"";display:block;clear:both}
+.interKeyList .viewListBtns a {float:left;width:calc(50% - 5px);height:41px;margin-right:10px;border:1px solid #b6b6b6;border-radius: 10px;background:#fff;color:#3e3e3e;font-size:1.142rem;font-family: PretendardB,sans-serif;line-height: 40px;text-align: center;box-sizing: border-box;}
+.interKeyList .viewListBtns a:last-child {margin-right:0}
+.interKeyList .viewListBtns a.on {border:2px solid #000}
+.interKeyList .viewList {background:#fff;padding:16px 16px 16px 12px}
+.interKeyList .viewList>ul>li:not(:last-child) {margin-bottom:8px}
+.interKeyList .viewList .tit {display:inline-block;color:#000;font-size:1.142rem;font-family: PretendardM,sans-serif;line-height: 18px;}
+.interKeyList .viewList .info {font-size:0}
+.interKeyList .viewList .info>li {display:inline-block;color:#999;font-size:1.071rem}
+.interKeyList .viewList .info>li:not(:last-child) {position:relative;padding-right:9px;margin-right:8px}
+.interKeyList .viewList .info>li:not(:last-child)::after {content:"";display:block;position:absolute;top:7px;right:0;width:1px;height:10px;background:#999}
+.interKeyList .btnArea {border-top:1px solid #ddd}
+.interKeyList .btnArea::after {content:"";display:block;clear:both}
+.interKeyList .btnArea>div {float:left;width:50%;box-sizing: border-box;text-align: center;}
+.interKeyList .btnArea>div:nth-of-type(1) {border-right:1px solid #ddd}
+.interKeyList .btnArea>div>a {display:inline-block;padding-left:24px;background-repeat: no-repeat;color:#000;font-size:1.071rem;line-height: 45px;}
+.interKeyList .btnArea>div>a.keyDel {background-image: url(../../images/commons/close3.png);background-position: left top 15px;}
+.interKeyList .btnArea>div>a.extend {background-image: url(../../images/commons/clock.png);background-position: left top 13px;}
+.interKeyword .caution {margin-top:20px;color:#d84c2f;font-size:1rem;line-height: 20px;}
+
+/* 내 복사대출신청현황 */
+.totalPeriod {padding:0 12px;margin-bottom:8px}
+.totalPeriod::after {content:"";display:block;clear:both}
+.totalPeriod>.total {float:left;margin:7px 4px 4px 0;color:#000;font-size: 1.071rem;font-family: PretendardB,sans-serif;}
+.totalPeriod>.total>span {color:#000;font-size: 1.071rem;font-family: PretendardB,sans-serif}
+.totalPeriod .period {float:right;}
+.totalPeriod .period .flexBox {display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-align: center;-ms-flex-align: center;align-items: center;}
+.totalPeriod .period label {color:#000;margin-right:8px;font-size:1rem;word-break: keep-all;}
+.totalPeriod .period input {width:120px;height:30px;background:url(../../images/commons/calIco.png) no-repeat right 10px center #fff;color:#000;padding-right:23px;font-family: PretendardM,sans-serif;font-size:0.928rem;text-align: center;box-sizing: border-box;border-radius: 10px;}
+.totalPeriod .period .btnType1 {min-width:40px;margin-left:4px;height:30px;line-height: 30px;font-size:0.928rem;}
+
+.toggleList>ul>li {padding:12px 0}
+.toggleList>ul>li:first-child {padding-top:0}
+.toggleList>ul>li:last-child {padding-bottom:0}
+.toggleList>ul>li:not(:last-child) {border-bottom:1px solid #e6e6e6}
+.toggleList>ul>li .title {display:block;position:relative;padding-right:25px;margin-bottom: 4px;color:#000;font-size: 1.214rem;font-family: PretendardM,sans-serif;line-height: 1.2;word-break: break-all;}
+.toggleList>ul>li .title::after {content:"";display:block;position:absolute;top:5px;right:0;width:14px;height:8px;background:url(../../images/search/btnArrow2.png) no-repeat;transition:.3s}
+.toggleList>ul>li .title.on:after {transform: translateY(-50%) rotate(180deg);}
+.toggleList>ul>li .clickHidden>ul {font-size:0;}
+.toggleList>ul>li .clickHidden>ul>li {display:inline-block;position:relative;color:#828282;font-size: 1rem;word-break: break-all;font-family: Pretendard,sans-serif;color:#828282;font-size: 1rem;font-family: Pretendard,sans-serif;}
+.toggleList>ul>li .clickHidden>ul>li:not(:last-child) {margin-right:8px}
+.toggleList>ul>li .clickHidden>ul>li span {color:#828282;font-size: 1rem;font-family: Pretendard,sans-serif;}
+.toggleList .clickShow {display:none;margin-top:8px;padding:8px 12px;background:#fafafa;border-radius: 10px;}
+.toggleList .clickShow>ul>li:not(:last-child) {margin-bottom:4px}
+.toggleList .clickShow>ul>li::after {content:"";display:block;clear:both}
+.toggleList .clickShow>ul>li .tit {float:left;width:90px;color:#828282;font-size:1rem;font-family: PretendardM,sans-serif;}
+.toggleList .clickShow>ul>li .txt {margin-left:90px;color:#1e1e1e;font-size:1rem;font-family: PretendardM,sans-serif;}
+
+@media screen and (max-width:420px) {
+    .totalPeriod .period label {display:none}
+    .totalPeriod .period input {width:108px}
+}
+
+/* 내관심 DB */
+.dbTable .blueBg1 {background:#d1d1f1;border: none;border-bottom: 1px solid #cdcdcd;border-left: 1px solid #cdcdcd !important;}
+.dbTable .blueBg2 {background:#f6f6fe}
+.dbTable .loginBtn img {vertical-align: top;}
+.custBox {text-align: center;}
+.custBox .hiddenChk {position:absolute;width:0;height:0;border:none;outline:none;font-size:0;visibility: hidden;}
+.custBox input[type="checkbox"] + label span.checkBox{display: inline-block;width:20px;height:16px;margin:0;vertical-align: middle;background: url(../../images/myriss/favorOff.png) no-repeat 0 0;cursor:pointer}
+.custBox input[type="checkbox"]:checked + label span.checkBox{display: inline-block;width:20px;height:16px;margin:0;vertical-align: middle;background: url(../../images/myriss/favorOn2.png) no-repeat 0 0;cursor:pointer}
+
+.dbTable td span.imgW {display:block}
+.dbTable table td a.goTo{display:inline-block;width:17px;height:17px;text-indent:-9999px;background:url(../../images/myriss/btnGoto.png) no-repeat 0 0;vertical-align:middle}
+.dbTable table td a.dnld{display:inline-block;width:20px;height:20px;text-indent:-9999px;background:url(../../images/myriss/dnld.png) no-repeat 0 0;vertical-align:middle}
+.dbTable table td a.vod{display:inline-block;width:20px;height:16px;margin-left:6px;text-indent:-9999px;background:url(../../images/myriss/vod.png) no-repeat 0 0;vertical-align:middle}
+.dbTable table td a.link{color:#1a1a1a;text-decoration:underline;}
+
+.dbTable.sticky-table table th {font-weight: normal;}
+.dbTable.sticky-table table td.sticky-cell, .dbTable.sticky-table table th.sticky-cell, .dbTable.sticky-table table td.sticky-cell-opposite, .dbTable.sticky-table table th.sticky-cell-opposite {outline:none;background:#fff}
+.dbTable.sticky-table table th.sticky-cell {background:#f3f3f3;}
+.dbTable.sticky-table table th::after {content:"";display:block;position:absolute;top:0;right:-1px;width:1px;height:100%;background:#cdcdcd}
+.dbTable.sticky-table table tr th:last-child::after {display:none}
+.dbTable.sticky-table table td.sticky-cell::after {content:"";display:block;position:absolute;top:0;right:-1px;width:1px;height:100%;background:#cdcdcd}
+.dbTable.sticky-table table td.sticky-cell.bold::after {content:"";display:block;position:absolute;top:0;right:-1px;width:1px;height:100%;background:#cdcdcd}
+.dbTable.sticky-table table td.sticky-cell.sBdn::after {background: #fff;}
+
+.dbTable.sticky-table table th::before {content:"";display:block;position:absolute;bottom:-1px;left:0;width:100%;height:1px;background:#cdcdcd}
+.dbTable.sticky-table table td.sticky-cell::before {content:"";display:block;position:absolute;bottom:-1px;left:0;width:100%;height:1px;background:#cdcdcd}
+
+/* 추천자료 없음 */
+.noRecom{text-align: center;}
+.noRecom .noRecomTxt1{margin-bottom:6px;padding-top:80px;background:url(../../images/myriss/noRecom.png) no-repeat top center; background-size:70px 70px;color:#000;font-size: 1.142rem;font-family: PretendardSB,sans-serif;line-height: 1.2;}
+.noRecom .noRecomTxt1>span{color:#000;font-size: 1.142rem;font-family: PretendardSB,sans-serif;}
+.noRecom .noRecomTxt2{color:#555;line-height: 1.2;}

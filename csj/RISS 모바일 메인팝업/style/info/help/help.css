@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+/* 상담신청완료 */
+.helpResult {text-align: center;}
+.helpResult .icoArea {display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center;width:105px;height:105px;margin:0 auto 28px auto;background:#e9e9e9;border-radius: 100%;}
+.helpResult .icoArea .helpComplate {width:60px;height:auto}
+.helpResult .mainTxt {color:#060606;font-family: PretendardB,sans-serif;font-size:1.285rem;}
+.helpResult .subTxt {margin-top:10px;color:#8b8b8b;font-size:1rem;line-height: 18px;word-break: keep-all;}
+.helpResult .btnBunchType1 {margin-top:28px}
+
+/* 신고센터 - 게시중단요청 */
+.innerCont .innerContBox h3.tit1{display:inline-block;margin-bottom:8px;padding-left:16px;color:#000;font-size:16px;background:url(../../../images/info/visit/titleBg.png) no-repeat left center; font-weight:bold;}
+.innerCont .innerContBox .cont p{color:#6a6a6a; font-size:14px; line-height: 20px; word-break: keep-all; word-wrap:normal; letter-spacing: -0.5px;}
+.cont .imgBox img {display:block;width:100%;height:auto;margin-top:20px !important}
+.downloadBtn{padding-left: 25px;background:url(/images/myriss/dnld.png) no-repeat left 10px center;font-size:1rem;height: 36px;line-height: 36px;border: 1px solid #e1e1e1;box-sizing: border-box;}
+.writeForm .caution{color:#686868;font-size:14px;}
+
+/* 신고센터 - RISS 저작권 관리 안내 */
+.divTable table{width:100%;border-top:2px solid #434343;}
+.divTable table thead tr th{padding:23px 0 20px;font-weight:normal;font-size:15px;background-color:#eee;border-bottom:1px solid #d6d6d6;border-left:1px solid #d6d6d6;vertical-align:middle;}
+.divTable table thead tr th:first-child{border-left:none;}
+.divTable table thead tr th.bdL{border-left:1px solid #d6d6d6;}
+.divTable table tbody tr{border-bottom:1px solid #d6d6d6;}
+.divTable table tbody tr td{padding:20px 10px;color:#706e6e;font-size:14px;line-height:17px;border-left:1px solid #d6d6d6;text-align:center;vertical-align: middle;}
+.divTable table tbody tr td p{font-size:13px;}
+.divTable table tbody tr td.taL{padding:20px;text-align:left;}
+.divTable table tbody tr td:first-child{border-left:none;}
+.divTable table tbody tr td.bdL{border-left:1px solid #d6d6d6;}
+
+/* 신고센터 - 개인정보 도용신고 */
+.innerBtnType1{display:inline-block;margin-left:4px;padding:2px 4px;background-color:#323231;color:#fff;font-size:0.857rem;border-radius:3px}

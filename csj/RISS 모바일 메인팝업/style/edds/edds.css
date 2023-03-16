@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+/* 도움말 */
+.guideBox1:not(:last-child){margin-bottom:24px}
+.guideBox1 .tit{margin-bottom:4px}
+.guideBox1 .innerList>li:not(:last-child){margin-bottom:4px}
+.guideBox1 .innerList .imgW{margin:8px 0 16px 0;border:1px solid #ddd;border-radius: 5px;overflow: hidden;}
+.guideBox1 .innerList .imgW img{width:100%;height:auto}
+@media screen and (max-width:900px) {
+    .guideBox1 .innerList .imgW{width:auto}
+}
