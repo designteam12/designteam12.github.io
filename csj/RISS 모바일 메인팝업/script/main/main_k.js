@@ -26,6 +26,13 @@ $(document).ready(function(){
             $(".mainPopup").hide();
         }
     });  
+    const appHeight = () => {
+        const doc = document.documentElement
+        doc.style.setProperty('— app-height', `${window.innerHeight}px`)
+    }
+    $(window).on("resize",function(){
+        appHeight();
+    })
 
     //팝업존
     let popZone = new Swiper('.popZone .inner',{
