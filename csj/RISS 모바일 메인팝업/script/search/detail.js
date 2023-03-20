@@ -111,6 +111,20 @@ $(document).ready(function(){
     return false
   });
 
+  //소장기관 instituteMore 
+  $(".instituteMore").on("click",function(){
+    if($(this).parent().hasClass("on")){
+      $(this).parent().removeClass("on");
+      $(this).text("소장기관 펼쳐보기");
+      $(this).attr('title','소장기관 펼쳐보기');
+    }else{
+      $(this).parent().addClass("on");
+      $(this).text("소장기관 접어보기");
+      $(this).attr('title','소장기관 접어보기');
+    }
+    return false
+  });
+
   //analysisTab
   $('.analysisTab .tab>a').click(function(){
     $('.analysisTab .tab').removeClass('on');

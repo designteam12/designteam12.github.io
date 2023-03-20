@@ -58,6 +58,9 @@
 #divFooter .footerMenu>ul>li:not(:last-child)::after {content:"";display:block;position:absolute;top:6px;right:0;width:1px;height:12px;background:#bbbcbc}
 #divFooter .footerMenu>ul>li>a {color:#5d5d5d;font-size:0.928rem;font-family: PretendardB,sans-serif;}
 
+#divFooter .goPC{margin-top: 20px;}
+#divFooter .goPC a{font-size: 1rem; font-family: PretendardM, sans-serif; color: #000;}
+
 @media screen and (max-width:350px) {
     #divFooter .footerMenu>ul>li:not(:last-child) {margin-right:6px;padding-right:6px}
 }

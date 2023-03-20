@@ -78,6 +78,7 @@
 
 /* popZone */
 .popZone{position: relative;margin-bottom:12px}
+.popZone .contentTitle{padding: 0 16px; padding-top: 6px; margin-bottom: 8px;}
 .popZone.bs{margin-bottom: 44px;}
 .popZone .inner{overflow: hidden;}
 
@@ -94,6 +95,7 @@
     .popZone .inner .popItem a img{width:100%;height:auto}
 }
 @media screen and (max-width:709px) {
+    .popZone .contentTitle{margin-bottom: 12px;}
     .popZone .inner .popItem{padding:0 8px;box-sizing: border-box;}
     .swiper-container-horizontal>.swiper-scrollbar{max-width:330px;width:100%;left:50%;transform: translateX(-50%);}
 }
@@ -166,6 +168,9 @@
 #divFooter .footerMenu>ul>li:not(:last-child){margin-right:8px;padding-right: 8px;}
 #divFooter .footerMenu>ul>li:not(:last-child)::after{content:"";display:block;position:absolute;top:6px;right:0;width:1px;height:12px;background:#bbbcbc}
 #divFooter .footerMenu>ul>li>a{color:#5d5d5d;font-size:0.928rem;font-family: PretendardB,sans-serif;}
+
+#divFooter .goPC{margin-top: 20px;}
+#divFooter .goPC a{font-size: 1rem; font-family: PretendardM, sans-serif; color: #000;}
 
 @media screen and (max-width:350px){
     #divFooter .footerMenu>ul>li:not(:last-child){margin-right:6px;padding-right:6px}
